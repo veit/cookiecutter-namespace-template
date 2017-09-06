@@ -1,0 +1,2 @@
+nclude:: ../README.rst
+
