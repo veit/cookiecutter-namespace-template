@@ -23,11 +23,11 @@ Then install cookiecutter:
 
     Now it’s time to generate your Python package.
 
-    Use cookiecutter, pointing it at the cookiecutter-namespace-package repo:
+    Use cookiecutter, pointing it at the cookiecutter-namespace-template repo:
 
     .. code-block:: bash
 
-        cookiecutter https://github.com/veit/cookiecutter-namespace-package.git
+        cookiecutter https://github.com/veit/cookiecutter-namespace-template.git
 
     You’ll be asked to enter a bunch of values to set the package up.
     If you don't know what to enter, stick with the defaults.

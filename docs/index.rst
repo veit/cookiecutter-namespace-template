@@ -1,5 +1,5 @@
-Welcome to cookiecutter-namespace-package’s documentation!
-==========================================================
+Welcome to cookiecutter-namespace-templates’s documentation!
+============================================================
 
 Getting Started
 ---------------

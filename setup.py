@@ -1,15 +1,20 @@
 # !/usr/bin/env python
 
+with open("README.rst", "r") as fh:
+    long_description = fh.read()
+
 from distutils.core import setup
 setup(
-    name='cookiecutter-namespace-package',
+    name='cookiecutter-namespace-template',
     packages=[],
-    version='0.1.0',
+    version='0.1.1',
     description='Cookiecutter template for a Python namespace package',
+    long_description=long_description,
+    long_description_content_type="text/x-rst",
     author='Veit Schiele',
     license='BSD',
     author_email='contact@veit-schiele.de',
-    url='https://github.com/veit/cookiecutter-namespace-package',
+    url='https://github.com/veit/cookiecutter-namespace-template',
     keywords=['cookiecutter', 'template', 'package', ],
     classifiers=[
         'Development Status :: 4 - Beta',

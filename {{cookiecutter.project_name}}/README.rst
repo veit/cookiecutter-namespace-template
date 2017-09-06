@@ -29,5 +29,5 @@ Credits
 
 This package was created with `Cookiecutter
 <https://github.com/audreyr/cookiecutter>`_ and the `cookiecutter-namespace-template
-<https://github.com/veit/cookiecutter-namespace-package>`_ project template.
+<https://github.com/veit/cookiecutter-namespace-template>`_ project template.
 

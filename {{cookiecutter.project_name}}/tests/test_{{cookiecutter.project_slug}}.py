@@ -27,7 +27,7 @@ def response():
     See more at: http://doc.pytest.org/en/latest/fixture.html
     """
     # import requests
-    # return requests.get('https://github.com/veit/cookiecutter-namespace-package')
+    # return requests.get('https://github.com/veit/cookiecutter-namespace-template')
 
 
 def test_content(response):
