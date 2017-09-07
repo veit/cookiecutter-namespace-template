@@ -64,14 +64,14 @@ and ready to go.
 #. Fork the `cookiecutter-namespace-package` repo on GitHub.
 #. Clone your fork locally::
 
-  .. code-block:: bash
+   .. code-block:: bash
 
     $ cd path/for/the/repo
     $ git clone git@github.com:YOUR_NAME/cookiecutter-namespace-template.git
 
 #. Assuming you have virtualenv installed (If you have Python3.5 this should
    already be there), you can create a new environment for your local
-   development by typing::
+   development by typing:
 
    .. code-block:: bash
 
@@ -111,9 +111,10 @@ and ready to go.
 
     $ pip install -U pip
 
-#. Before raising a pull request you should also run tox. This will run the tests across different versions of Python::
+#. Before raising a pull request you should also run tox. This will run the
+   tests across different versions of Python:
 
-  .. code-block:: bash
+   .. code-block:: bash
 
     $ tox
 
@@ -124,7 +125,7 @@ and ready to go.
 #. If your contribution is a bug fix or new feature, you may want to add a test
    to the existing test suite. See section *Add a New Test* below for details.
 
-#. Commit your changes and push your branch to GitHub::
+#. Commit your changes and push your branch to GitHub:
 
    .. code-block:: bash
 
@@ -159,23 +160,31 @@ To write and run your new test, follow these steps:
    specific bug or a small part of the new feature.
 
 #. If you have already made changes to the code, stash your changes and confirm
-   all your changes were stashed::
+   all your changes were stashed:
+
+   .. code-block:: bash
 
     $ git stash
     $ git stash list
 
 #. Run your test and confirm that your test fails. If your test does not fail,
-   rewrite the test until it fails on the original code::
+   rewrite the test until it fails on the original code:
+
+   .. code-block:: bash
 
     $ py.test ./tests
 
 #. (Optional) Run the tests with tox to ensure that the code changes work with
-   different Python versions::
+   different Python versions:
+
+   .. code-block:: bash
 
     $ tox
 
 #. Proceed work on your bug fix or new feature or restore your changes. To
-   restore your stashed changes and confirm their restoration::
+   restore your stashed changes and confirm their restoration:
+
+   .. code-block:: bash
 
     $ git stash pop
     $ git stash list
