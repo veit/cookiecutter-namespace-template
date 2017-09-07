@@ -7,7 +7,7 @@ from distutils.core import setup
 setup(
     name='cookiecutter-namespace-template',
     packages=[],
-    version='0.1.2',
+    version='0.1.3',
     description='Cookiecutter template for a Python namespace package',
     long_description=long_description,
     long_description_content_type="text/x-rst",
