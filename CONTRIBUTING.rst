@@ -58,11 +58,11 @@ Get Started!
 Ready to contribute? Here's how to set up `cookiecutter-namespace-template` for
 local development. Please note this documentation assumes you already have
 `virtualenv <https://virtualenv.pypa.io/en/stable/installation>`_ and `Git
-<https://git-scm.com/book/en/v2/Getting-Started-Installing-Git>`_` installed
+<https://git-scm.com/book/en/v2/Getting-Started-Installing-Git>`_ installed
 and ready to go.
 
 #. Fork the `cookiecutter-namespace-package` repo on GitHub.
-#. Clone your fork locally::
+#. Clone your fork locally:
 
    .. code-block:: bash
 
@@ -81,7 +81,7 @@ and ready to go.
    This should change the shell to look something like
    ``(cookiecutter-namespace-template-env) $``
 
-#. Create a branch for local development::
+#. Create a branch for local development:
 
    .. code-block:: bash
 
@@ -91,7 +91,7 @@ and ready to go.
 
 #. When you're done making changes, check that your changes pass flake8. Since,
    this package contains mostly templates the flake should be run for tests
-   directory::
+   directory:
 
    .. code-block:: bash
 
@@ -99,7 +99,7 @@ and ready to go.
 
 #. The next step would be to run the test cases.
    `cookiecutter-namespace-template` uses ``py.test``. Before you run pytest
-   you should ensure all dependancies are installed::
+   you should ensure all dependancies are installed:
 
    .. code-block:: bash
 
@@ -107,7 +107,7 @@ and ready to go.
     $ py.test ./tests
 
    If you get any errors while installing cryptography package (something like
-   ``#include <openssl/aes.h>``). Please update your pip version and try again::
+   ``#include <openssl/aes.h>``). Please update your pip version and try again:
 
     $ pip install -U pip
 
