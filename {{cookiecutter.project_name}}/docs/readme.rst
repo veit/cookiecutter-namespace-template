@@ -1,2 +1,1 @@
-nclude:: ../README.rst
-
+include:: ../README.rst
