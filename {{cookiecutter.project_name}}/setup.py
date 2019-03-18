@@ -22,7 +22,8 @@ test_requirements = [{%- if cookiecutter.use_pytest == 'y' %}'pytest',{%- endif 
     'BSD license': 'License :: OSI Approved :: BSD License',
     'ISC license': 'License :: OSI Approved :: ISC License (ISCL)',
     'Apache Software License 2.0': 'License :: OSI Approved :: Apache Software License',
-    'GNU General Public License v3': 'License :: OSI Approved :: GNU General Public License v3 (GPLv3)'
+    'GNU General Public License v3': 'License :: OSI Approved :: GNU General Public License v3 (GPLv3)',
+    'Other/Proprietary License': 'License :: Other/Proprietary License'
 } %}
 
 setup(
@@ -33,6 +34,9 @@ setup(
         'Intended Audience :: Developers',
 {%- if cookiecutter.license in license_classifiers %}
         '{{ license_classifiers[cookiecutter.license] }}',
+{%- endif %}
+{%- if cookiecutter.license == 'Other/Proprietary License' %}
+        'Private :: Do Not Upload',
 {%- endif %}
         'Natural Language :: English',
         "Programming Language :: Python :: 2",
