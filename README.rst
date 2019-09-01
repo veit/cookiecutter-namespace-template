@@ -5,8 +5,18 @@ Cookiecutter Namespace Template
 `Cookiecutter <https://github.com/audreyr/cookiecutter>`_ Namespace Template
 for a Python package.
 
-* GitHub repo: https://github.com/veit/cookiecutter-namespace-template/
-* License: BSD license
+|Downloads| |Versionns| |Contributors| |License| |Docs|
+
+.. |Downloads| image:: https://pepy.tech/badge/cookiecutter-namespace-template
+   :target: https://pepy.tech/project/cookiecutter-namespace-template
+.. |Versionns| image:: https://img.shields.io/pypi/pyversions/cookiecutter-namespace-template.svg
+   :target: https://pypi.org/project/cookiecutter-namespace-template/
+.. |Contributors| image:: https://img.shields.io/github/contributors/veit/cookiecutter-namespace-template.svg
+   :target: https://github.com/veit/cookiecutter-namespace-template/graphs/contributors
+.. |License| image:: https://img.shields.io/github/license/veit/cookiecutter-namespace-template.svg
+   :target: https://github.com/veit/cookiecutter-namespace-template/blob/master/LICENSE
+.. |Docs| image:: https://readthedocs.org/projects/cookiecutter-namespace-template/badge/?version=latest
+   :target: https://cookiecutter-namespace-template.readthedocs.io/en/latest/
 
 Features
 --------
