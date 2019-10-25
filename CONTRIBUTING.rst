@@ -146,7 +146,8 @@ Before you submit a pull request, check that it meets these guidelines:
    your new functionality into a function with a docstring, and add the
    feature to the list in ``README.rst``.
 
-#. The pull request should work for Python 2.7, 3.4, 3.5 and 3.6, and for PyPy.
+#. The pull request should work for Python 2.7, 3.5, 3.6, 3.7 and 3.8, and for
+   PyPy.
 
 Add a New Test
 ---------------
