@@ -49,5 +49,5 @@ With ``mypackage`` adjusted to the specific project.
 
 
 .. seealso::
-    http://click.pocoo.org/
+    https://click.palletsprojects.com/
 
