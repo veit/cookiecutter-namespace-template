@@ -88,10 +88,10 @@ release: dist ## package and upload a release
 	twine upload dist/*
 
 dist: clean ## builds source and wheel package
-	python setup.py sdist
-	python setup.py bdist_wheel
+	rm -rf build dist
+	python -m pep517.build .
 	ls -l dist
 
 install: clean ## install the package to the active Python's site-packages
-	python setup.py install
+	pip install dist/cookiecutter-namespace-template-0.1.10.tar.gz
 
