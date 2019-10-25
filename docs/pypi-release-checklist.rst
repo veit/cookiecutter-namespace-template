@@ -1,17 +1,6 @@
 PyPI Release Checklist
 ======================
 
-Before Your First Release
--------------------------
-
-#. Register the package on PyPI:
-
-    .. code-block:: bash
-
-        $ python setup.py register
-
-#. Visit PyPI to make sure you are registered.
-
 For Every Release
 -------------------
 
