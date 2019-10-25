@@ -21,7 +21,7 @@ from setuptools import setup, find_packages
 ###################################################################
 
 PACKAGES = []
-META_PATH = os.path.join("{{cookiecutter.namespace}}", "__about__.py")
+META_PATH = os.path.join("{{cookiecutter.namespace}}", "{{cookiecutter.package_name}}", "__init__.py")
 
 KEYWORDS = ['{{ cookiecutter.project_slug }}', ]
 CLASSIFIERS = [
@@ -47,7 +47,7 @@ CLASSIFIERS = [
 ###################################################################
 
 about = {}
-with open(os.path.join("__about__.py")) as f:
+with open(os.path.join("{{cookiecutter.namespace}}", "{{cookiecutter.package_name}}", "__init__.py")) as f:
     exec(f.read(), about)
 
 with open('README.rst') as readme_file:
