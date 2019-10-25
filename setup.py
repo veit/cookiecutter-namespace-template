@@ -9,7 +9,7 @@ from setuptools import setup
 ###################################################################
 
 PACKAGES = []
-META_PATH = os.path.join(__about__.py")
+META_PATH = os.path.join("__about__.py")
 KEYWORDS = ['cookiecutter', 'template', 'package', ]
 CLASSIFIERS = [
     'Development Status :: 4 - Beta',
