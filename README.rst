@@ -32,7 +32,8 @@ Features
   version bumping with a single command
 * Optional auto-release to `PyPI <https://pypi.org/>`_ when you push a new tag
   to master (optional)
-* Optional command line interface using Click
+* Optional command line interface using `Click
+  <https://palletsprojects.com/p/click/>`_
 
 Quickstart
 ----------
