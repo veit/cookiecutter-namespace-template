@@ -9,6 +9,8 @@ for a Python package.
 
 .. |Downloads| image:: https://pepy.tech/badge/cookiecutter-namespace-template
    :target: https://pepy.tech/project/cookiecutter-namespace-template
+.. |Updates| image:: https://pyup.io/repos/github/veit/cookiecutter-namespace-template/shield.svg
+   :target: https://pyup.io/repos/github/veit/cookiecutter-namespace-template/
 .. |Versionns| image:: https://img.shields.io/pypi/pyversions/cookiecutter-namespace-template.svg
    :target: https://pypi.org/project/cookiecutter-namespace-template/
 .. |Contributors| image:: https://img.shields.io/github/contributors/veit/cookiecutter-namespace-template.svg
