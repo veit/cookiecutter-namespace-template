@@ -48,9 +48,19 @@ Quickstart
     $ cookiecutter https://github.com/veit/cookiecutter-namespace-template.git
 
 #. Create a repo and put it there.
+
 #. `Register <https://pypi.org/account/register/>`_ your project with PyPI.
+
 #. Add the repo to your `ReadTheDocs <https://readthedocs.io/>`_ account and
    turn on the ReadTheDocs service hook.
+
+#. If you want to add the pyup badge to your README file
+   
+   #. create a new account at `pyup.io <https://pyup.io>`_ or log into your
+      existing account
+   #. click on the green *Add Repo* button
+   #. click *Pin* to add the repo
+
 #. Release your package by pushing a new tag to master.
 
 Pull requests

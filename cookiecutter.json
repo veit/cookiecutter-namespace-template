@@ -9,6 +9,7 @@
   "project_short_description": "Python Namespace Package contains all you need to create a Python namespace package.",
   "pypi_username": "veit",
   "use_pytest": "y",
+  "add_pyup_badge": "n",
   "command_line_interface": ["Click", "No command-line interface"],
   "version": "0.1.0",
   "create_author_file": "y",
