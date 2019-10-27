@@ -1,15 +1,17 @@
 Console Script Setup
 ====================
 
-Optionally, your package can include a console script
+Optionally, your package can include a console script using `Click
+<https://palletsprojects.com/p/click/>`_ or `argparse
+<https://docs.python.org/3/library/argparse.html>`_ for Python≥3.2.
 
 How it works
 ------------
 
-If the ``command_line_interface`` option is set to ``['click']`` during setup,
-cookiecutter will add a file ``cli.py`` in the ``project_slug`` subdirectory. An
-entry point is added to ``setup.py`` that points to the main function in
-``cli.py``.
+If the ``command_line_interface`` option is set to ``['click']`` or
+``['argparse']`` during setup, cookiecutter will add a file ``cli.py`` in the
+``project_slug`` subdirectory. An entry point is added to ``setup.py`` that
+points to the main function in ``cli.py``.
 
 Usage
 -----
