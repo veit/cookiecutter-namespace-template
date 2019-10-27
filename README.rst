@@ -28,7 +28,7 @@ Features
   2.7, 3.5, 3.6, 3.7, 3.8
 * `Sphinx <http://www.sphinx-doc.org/>`_ docs: Documentation ready for
   generation with, for example, ReadTheDocs_
-* `Bumpversion <https://github.com/peritus/bumpversion>`_: Pre-configured
+* `bump2version <https://github.com/c4urself/bump2version>`_: Pre-configured
   version bumping with a single command
 * Optional auto-release to `PyPI <https://pypi.org/>`_ when you push a new tag
   to master (optional)
