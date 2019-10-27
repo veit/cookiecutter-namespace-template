@@ -93,5 +93,5 @@ dist: clean ## builds source and wheel package
 	ls -l dist
 
 install: clean ## install the package to the active Python's site-packages
-	pip install dist/cookiecutter-namespace-template-0.1.12.tar.gz
+	pip install dist/cookiecutter-namespace-template-0.1.13.tar.gz
 
