@@ -43,9 +43,9 @@ The following will work as expected:
 .. code-block:: bash
 
     $ bin/python setup.py install
-    $ bin/pip install mypackage
+    $ bin/pip install my.package
 
-With ``mypackage`` adjusted to the specific project.
+With ``my.package`` adjusted to the specific project.
 
 
 .. seealso::
