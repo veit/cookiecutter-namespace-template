@@ -74,4 +74,3 @@ class Test{{ cookiecutter.project_slug|title }}(unittest.TestCase):
         assert '--help  Show this message and exit.' in help_result.output
 {%- endif %}
 {%- endif %}
-
