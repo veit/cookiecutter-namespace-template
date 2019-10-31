@@ -70,17 +70,17 @@ setup(
     long_description=readme + '\n\n' + history,
     long_description_content_type="text/x-rst",
     {%- if cookiecutter.license in license_classifiers %}
-        license=about["__license__"],
+    license=about["__license__"],
     {%- endif %}
     url=about["__url__"],
     keywords=KEYWORDS,
     classifiers=CLASSIFIERS,
     {%- if 'no' not in cookiecutter.command_line_interface|lower %}
-        entry_points={
-            'console_scripts': [
-                '{{ cookiecutter.project_slug }}={{ cookiecutter.project_slug }}.cli:main',
-            ],
-        },
+    entry_points={
+        'console_scripts': [
+            '{{ cookiecutter.project_slug }}={{ cookiecutter.project_slug }}.cli:main',
+        ],
+    },
     {%- endif %}
     install_requires=requirements,
     include_package_data=True,
