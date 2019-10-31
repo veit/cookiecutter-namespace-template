@@ -98,13 +98,13 @@ and ready to go.
     $ flake8 ./tests
 
 #. The next step would be to run the test cases.
-   `cookiecutter-namespace-template` uses ``py.test``. Before you run pytest
+   `cookiecutter-namespace-template` uses ``pytest``. Before you run pytest
    you should ensure all dependancies are installed:
 
    .. code-block:: bash
 
-    $ pip install -rrequirements_dev.txt
-    $ py.test ./tests
+    $ pip install -r requirements_dev.txt
+    $ pytest ./tests
 
    If you get any errors while installing cryptography package (something like
    ``#include <openssl/aes.h>``). Please update your pip version and try again:
@@ -173,7 +173,7 @@ To write and run your new test, follow these steps:
 
    .. code-block:: bash
 
-    $ py.test ./tests
+    $ pytest ./tests
 
 #. (Optional) Run the tests with tox to ensure that the code changes work with
    different Python versions:
