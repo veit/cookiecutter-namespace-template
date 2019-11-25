@@ -1,5 +1,3 @@
-# -*- coding: utf-8 -*-
-
 """Package for {{ cookiecutter.project_name }}."""
 
 __title__ = "{{ cookiecutter.project_slug }}"

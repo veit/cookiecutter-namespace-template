@@ -1,5 +1,4 @@
 #!/usr/bin/env python3
-# -*- coding: utf-8 -*-
 #
 # cookiecutter-namespace-template documentation build configuration file, created by
 # sphinx-quickstart on Thu Aug 30 09:17:41 2017.
