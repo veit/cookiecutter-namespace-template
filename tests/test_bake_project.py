@@ -74,11 +74,6 @@ def project_info(result):
     project_dir = os.path.join(project_path, project_slug)
     return project_path, project_slug, project_dir
 
-  "project_name": "namespace.package",
-  "namespace": "{{ cookiecutter.repo_name.split('.')[0] }}",
-  "package_name": "{{ cookiecutter.repo_name.split('.')[1] }}",
-
-
 def test_bake_with_defaults(cookies):
     with bake_in_temp_dir(cookies) as result:
         assert result.project.isdir()
