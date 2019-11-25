@@ -35,6 +35,11 @@ Features
 * Optional command line interface using `Click
   <https://palletsprojects.com/p/click/>`_
 
+If you really want to create a new package for Python 2, in spite of the
+`Python 2.7 countdown <https://pythonclock.org/>`_ and the `Sunsetting Python 2
+support <https://python3statement.org/>`_, then use
+``cookiecutter-namespace-template`` <0.2.
+
 Quickstart
 ----------
 
