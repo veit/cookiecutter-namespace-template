@@ -25,7 +25,7 @@ Features
 
 * Testing setup with ``unittest`` and ``python setup.py test`` or ``pytest``
 * `Tox <https://tox.readthedocs.io/>`_ testing: Setup to easily test for Python
-  2.7, 3.5, 3.6, 3.7, 3.8
+  3.5, 3.6, 3.7, 3.8
 * `Sphinx <http://www.sphinx-doc.org/>`_ docs: Documentation ready for
   generation with, for example, ReadTheDocs_
 * `bump2version <https://github.com/c4urself/bump2version>`_: Pre-configured
