@@ -180,7 +180,7 @@ def test_using_pytest(cookies):
     ) as result:
         assert result.project.isdir()
         test_file_path = result.project.join(
-            'tests/test_python_boilerplate.py'
+            'tests/test_vsc-example.py'
         )
         lines = test_file_path.readlines()
         assert "import pytest" in ''.join(lines)
@@ -194,7 +194,7 @@ def test_not_using_pytest(cookies):
     with bake_in_temp_dir(cookies) as result:
         assert result.project.isdir()
         test_file_path = result.project.join(
-            'tests/test_python_boilerplate.py'
+            'tests/test_vsc-example.py'
         )
         lines = test_file_path.readlines()
         assert "import unittest" in ''.join(lines)
