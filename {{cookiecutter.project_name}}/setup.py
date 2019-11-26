@@ -56,8 +56,6 @@ requirements = [{%- if cookiecutter.command_line_interface|lower == 'click' %}'C
 
 setup_requirements = [{%- if cookiecutter.use_pytest == 'y' %}'pytest-runner',{%- endif %} ]
 
-test_requirements = [{%- if cookiecutter.use_pytest == 'y' %}'pytest',{%- endif %} ]
-
 setup(
     name=about["__title__"],
     author=about["__author__"],
@@ -84,6 +82,5 @@ setup(
     packages=find_packages(include=['{{ cookiecutter.project_slug }}']),
     setup_requires=setup_requirements,
     test_suite='tests',
-    tests_require=test_requirements,
     zip_safe=False,
 )
