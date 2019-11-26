@@ -192,7 +192,7 @@ def test_using_pytest(cookies):
 
 
 def test_using_unittest(cookies):
-    with bake_in_temp_dir(cookies) as result:
+    with bake_in_temp_dir(cookies, extra_context={'use_pytest': 'n'}) as result:
         assert result.project.isdir()
         test_file_path = result.project.join(
             'tests/test_vsc-example.py'
