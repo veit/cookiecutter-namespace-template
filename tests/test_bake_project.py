@@ -165,7 +165,7 @@ def test_bake_selecting_license(cookies):
 def test_bake_not_open_source(cookies):
     with bake_in_temp_dir(
         cookies,
-        extra_context={'license': 'Not open source'}
+        extra_context={'license': 'Other/Proprietary License'}
     ) as result:
         found_toplevel_files = [f.basename for f in result.project.listdir()]
         assert 'setup.py' in found_toplevel_files

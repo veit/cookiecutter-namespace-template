@@ -8,7 +8,11 @@ package_name = project_slug.split('.')[1]
 package_path = os.path.join(project_path, namespace, package_name)
 
 
-def remove_file(filepath):
+def remove_project_file(filepath):
+    os.remove(os.path.join(project_path, filepath))
+
+
+def remove_package_file(filepath):
     os.remove(os.path.join(package_path, filepath))
 
 
@@ -26,5 +30,5 @@ if __name__ == '__main__':
         cli_file = os.path.join(package_path, 'cli.py')
         remove_file(cli_file)
 
-    if 'Not open source' == '{{ cookiecutter.license }}':
-        remove_file('LICENSE')
+    if 'Other/Proprietary License' == '{{ cookiecutter.license }}':
+        remove_project_file('LICENSE')

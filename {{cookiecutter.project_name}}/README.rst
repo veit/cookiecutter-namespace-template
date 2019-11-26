@@ -1,4 +1,4 @@
-{% set is_open_source = cookiecutter.license != 'Not open source' -%}
+{% set is_open_source = cookiecutter.license != 'Other/Proprietary License' -%}
 {% for _ in cookiecutter.project_name %}={% endfor %}
 {{ cookiecutter.project_name }}
 {% for _ in cookiecutter.project_name %}={% endfor %}
