@@ -87,7 +87,7 @@ def test_bake_with_defaults(cookies):
 def test_bake_and_run_tests(cookies):
     with bake_in_temp_dir(cookies) as result:
         assert result.project.isdir()
-        run_inside_dir('python setup.py test', str(result.project)) == 0
+        run_inside_dir('python -m unittest discover', str(result.project)) == 0
         print("test_bake_and_run_tests path", str(result.project))
 
 
@@ -98,7 +98,7 @@ def test_bake_withspecialchars_and_run_tests(cookies):
         extra_context={'full_name': 'name "quote" name'}
     ) as result:
         assert result.project.isdir()
-        run_inside_dir('python setup.py test', str(result.project)) == 0
+        run_inside_dir('python -m unittest discover', str(result.project)) == 0
 
 
 def test_bake_with_apostrophe_and_run_tests(cookies):
@@ -108,7 +108,7 @@ def test_bake_with_apostrophe_and_run_tests(cookies):
         extra_context={'full_name': "O'connor"}
     ) as result:
         assert result.project.isdir()
-        run_inside_dir('python setup.py test', str(result.project)) == 0
+        run_inside_dir('python -m unittest discover', str(result.project)) == 0
 
 
 def test_bake_without_author_file(cookies):
@@ -185,12 +185,10 @@ def test_using_pytest(cookies):
         lines = test_file_path.readlines()
         assert "import pytest" in ''.join(lines)
         # Test the new pytest target
-        run_inside_dir('python setup.py pytest', str(result.project)) == 0
-        # Test the test alias (which invokes pytest)
-        run_inside_dir('python setup.py test', str(result.project)) == 0
+        run_inside_dir('python -m pytest', str(result.project)) == 0
 
 
-def test_not_using_pytest(cookies):
+def test_using_unittest(cookies):
     with bake_in_temp_dir(cookies) as result:
         assert result.project.isdir()
         test_file_path = result.project.join(
@@ -199,6 +197,7 @@ def test_not_using_pytest(cookies):
         lines = test_file_path.readlines()
         assert "import unittest" in ''.join(lines)
         assert "import pytest" not in ''.join(lines)
+        run_inside_dir('python -m unittest discover', str(result.project)) == 0
 
 
 def test_bake_with_no_console_script(cookies):
