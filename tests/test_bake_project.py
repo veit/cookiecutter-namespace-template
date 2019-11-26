@@ -160,9 +160,8 @@ def test_bake_selecting_license(cookies):
             cookies,
             extra_context={'license': license}
         ) as result:
-            found_toplevel_files = [f.basename for f in result.project.listdir()]
             assert target_string in result.project.join('LICENSE').read()
-            assert license in found_toplevel_files.join('vsc', 'example', '__init__.py').read()
+            assert license in result.project.join('vsc', 'example', '__init__.py').read()
 
 
 def test_bake_not_open_source(cookies):
