@@ -23,7 +23,7 @@ for a Python package.
 Features
 --------
 
-* Testing setup with ``unittest`` and ``python setup.py test`` or ``pytest``
+* Testing setup with ``unittest`` or ``pytest``
 * `Tox <https://tox.readthedocs.io/>`_ testing: Setup to easily test for Python
   3.5, 3.6, 3.7, 3.8
 * `Sphinx <http://www.sphinx-doc.org/>`_ docs: Documentation ready for
