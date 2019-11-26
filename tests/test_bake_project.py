@@ -65,11 +65,13 @@ def test_year_compute_in_license_file(cookies):
 def project_info(result):
     """Get toplevel dir, project_slug, and project dir from baked cookies"""
     project_path = str(result.project)
-    namespace = os.path.repo_name.split('.')[0]
-    package_name = os.path.repo_name.split('.')[1]
     project_slug = os.path.split(project_path)[-1]
+    namespace = project_slug.split('.')[0]
+    package_name = project_slug.split('.')[1]
     project_dir = os.path.join(project_path, project_slug)
-    return project_path, project_slug, project_dir
+    package_dir = os.path.join(project_path, namespace, package_name)
+    return project_path, project_slug, package_dir
+
 
 def test_bake_with_defaults(cookies):
     with bake_in_temp_dir(cookies) as result:
@@ -158,8 +160,9 @@ def test_bake_selecting_license(cookies):
             cookies,
             extra_context={'license': license}
         ) as result:
+            project_path, project_slug, package_dir = project_info(result)
             assert target_string in result.project.join('LICENSE').read()
-            assert license in result.project.join('setup.py').read()
+            assert license in result.project.join(package_dir, '__init__.py').read()
 
 
 def test_bake_not_open_source(cookies):
@@ -203,8 +206,8 @@ def test_using_unittest(cookies):
 def test_bake_with_no_console_script(cookies):
     context = {'command_line_interface': "No command-line interface"}
     result = cookies.bake(extra_context=context)
-    project_path, project_slug, project_dir = project_info(result)
-    found_project_files = os.listdir(project_dir)
+    project_path, project_slug, package_dir = project_info(result)
+    found_project_files = os.listdir(package_dir)
     assert "cli.py" not in found_project_files
 
     setup_path = os.path.join(project_path, 'setup.py')
@@ -215,8 +218,8 @@ def test_bake_with_no_console_script(cookies):
 def test_bake_with_console_script_files(cookies):
     context = {'command_line_interface': 'click'}
     result = cookies.bake(extra_context=context)
-    project_path, project_slug, project_dir = project_info(result)
-    found_project_files = os.listdir(project_dir)
+    project_path, project_slug, package_dir = project_info(result)
+    found_project_files = os.listdir(package_dir)
     assert "cli.py" in found_project_files
 
     setup_path = os.path.join(project_path, 'setup.py')
@@ -266,8 +269,8 @@ def test_bake_with_console_script_cli(cookies):
 def test_bake_with_argparse_console_script_cli(cookies):
     context = {'command_line_interface': 'argparse'}
     result = cookies.bake(extra_context=context)
-    project_path, project_slug, project_dir = project_info(result)
-    module_path = os.path.join(project_dir, 'cli.py')
+    project_path, project_slug, package_dir = project_info(result)
+    module_path = os.path.join(package_dir, 'cli.py')
     module_name = '.'.join([project_slug, 'cli'])
     if sys.version_info >= (3, 5):
         spec = importlib.util.spec_from_file_location(module_name, module_path)
