@@ -85,14 +85,14 @@ local development.
    tests, including testing other Python versions with tox::
 
     $ flake8 {{ cookiecutter.project_slug }} tests
-    $ python setup.py test
+    $ python -m unittest discover
     $ tox
 
    To get flake8 and tox, just pip install them into your virtualenv.
 
    If you have specified ``cookiecutter.use_pytest == 'y'`` run the tests with:
 
-    $ python setup.py pytest
+    $ python -m pytest
 
 6. Commit your changes and push your branch to GitHub::
 
