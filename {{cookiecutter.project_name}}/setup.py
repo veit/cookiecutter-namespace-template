@@ -78,6 +78,5 @@ setup(
     install_requires=requirements,
     include_package_data=True,
     packages=find_packages(include=['{{ cookiecutter.project_slug }}']),
-    test_suite='tests',
     zip_safe=False,
 )
