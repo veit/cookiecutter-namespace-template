@@ -54,8 +54,6 @@ with open('HISTORY.rst') as history_file:
 
 requirements = [{%- if cookiecutter.command_line_interface|lower == 'click' %}'Click>=6.0',{%- endif %} ]
 
-setup_requirements = [{%- if cookiecutter.use_pytest == 'y' %}'pytest-runner',{%- endif %} ]
-
 setup(
     name=about["__title__"],
     author=about["__author__"],
@@ -80,7 +78,6 @@ setup(
     install_requires=requirements,
     include_package_data=True,
     packages=find_packages(include=['{{ cookiecutter.project_slug }}']),
-    setup_requires=setup_requirements,
     test_suite='tests',
     zip_safe=False,
 )
