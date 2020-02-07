@@ -13,5 +13,5 @@ __author__ = "Veit Schiele"
 __email__ = "contact@veit-schiele.de"
 
 __license__ = "BSD"
-__copyright__ = "Copyright 2017–2019 {}".format(__author__)
+__copyright__ = "Copyright 2017–2020 {}".format(__author__)
 

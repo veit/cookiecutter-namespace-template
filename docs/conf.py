@@ -53,7 +53,7 @@ master_doc = 'index'
 
 # General information about the project.
 project = 'cookiecutter-namespace-template'
-copyright = '2017–2019, Veit Schiele'
+copyright = '2017–2020, Veit Schiele'
 author = 'Veit Schiele'
 
 # The version info for the project you're documenting, acts as replacement for
