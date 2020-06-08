@@ -1,5 +1,5 @@
-pytest==5.4.2
-tox==3.15.1
+pytest==5.4.3
+tox==3.15.2
 cookiecutter>=1.4.0
 pytest-cookies==0.5.1
 watchdog==0.10.2
