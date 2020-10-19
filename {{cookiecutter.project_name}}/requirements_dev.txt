@@ -7,7 +7,7 @@ tox==3.20.1
 coverage==5.3
 Sphinx==3.2.1
 twine==3.2.0
-pep517==0.8.2
+pep517==0.9.1
 {% if cookiecutter.command_line_interface|lower == 'click' -%}
 click==7.0{% endif %}
 {% if cookiecutter.use_pytest == 'y' -%}
