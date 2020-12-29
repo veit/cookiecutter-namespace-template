@@ -5,8 +5,8 @@ watchdog==1.0.2
 flake8==3.8.4
 tox==3.20.1
 coverage==5.3.1
-Sphinx==3.4.0
-twine==3.2.0
+Sphinx==3.4.1
+twine==3.3.0
 pep517==0.9.1
 {% if cookiecutter.command_line_interface|lower == 'click' -%}
 click==7.0{% endif %}
