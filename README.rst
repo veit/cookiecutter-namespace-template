@@ -2,8 +2,8 @@
 Cookiecutter Namespace Template
 ===============================
 
-`Cookiecutter <https://github.com/audreyr/cookiecutter>`_ Namespace Template
-for a Python package.
+`Cookiecutter <https://github.com/cookiecutter/cookiecutter>`_ Namespace
+Template for a Python package.
 
 |Downloads| |Updates| |Versions| |Contributors| |License| |Docs|
 
@@ -74,4 +74,3 @@ Pull requests
 If you have differences in your preferred setup, I encourage you to fork this
 to create your own version. I also accept pull requests on this, if they’re
 small, atomic, and if they make my own packaging experience better.
-

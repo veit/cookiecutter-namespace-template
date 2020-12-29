@@ -33,6 +33,6 @@ Credits
 -------
 
 This package was created with `Cookiecutter
-<https://github.com/audreyr/cookiecutter>`_ and the `cookiecutter-namespace-template
+<https://github.com/cookiecutter/cookiecutter>`_ and the
+`cookiecutter-namespace-template
 <https://github.com/veit/cookiecutter-namespace-template>`_ project template.
-
