@@ -1,4 +1,4 @@
-pytest==6.2.1
+pytest==6.2.2
 tox==3.21.2
 cookiecutter>=1.4.0
 pytest-cookies==0.5.1
