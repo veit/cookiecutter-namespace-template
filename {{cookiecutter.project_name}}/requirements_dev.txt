@@ -11,6 +11,6 @@ pep517==0.10.0
 {% if cookiecutter.command_line_interface|lower == 'click' -%}
 click==7.0{% endif %}
 {% if cookiecutter.use_pytest == 'y' -%}
-pytest==6.2.2
+pytest==6.2.3
 pytest-runner==5.1{% endif %}
 
