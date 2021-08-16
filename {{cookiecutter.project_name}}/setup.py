@@ -22,7 +22,9 @@ from setuptools import setup, find_packages
 PACKAGES = []
 META_PATH = os.path.join("{{cookiecutter.namespace}}", "{{cookiecutter.package_name}}", "__init__.py")
 
-KEYWORDS = ['{{ cookiecutter.project_slug }}', ]
+KEYWORDS = [
+    '{{ cookiecutter.project_slug }}',
+]
 CLASSIFIERS = [
     'Development Status :: 2 - Pre-Alpha',
     'Intended Audience :: Developers',
@@ -52,7 +54,11 @@ with open('README.rst') as readme_file:
 with open('HISTORY.rst') as history_file:
     history = history_file.read()
 
-requirements = [{%- if cookiecutter.command_line_interface|lower == 'click' %}'Click>=6.0',{%- endif %} ]
+requirements = [
+    {%- if cookiecutter.command_line_interface|lower == 'click' %}
+    'Click>=6.0',
+    {%- endif %}
+]
 
 setup(
     name=about["__title__"],
