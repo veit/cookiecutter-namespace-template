@@ -4,7 +4,7 @@ import codecs
 import os
 import re
 
-from setuptools import setup
+from setuptools import setup, find_packages
 
 ###################################################################
 
@@ -41,7 +41,7 @@ with open("README.rst", "r") as fh:
 from distutils.core import setup
 setup(
     name=about["__title__"],
-    packages=PACKAGES,
+    packages=find_packages(include=PACKAGES),
     version=about["__version__"],
     description=about["__summary__"],
     long_description=long_description,
