@@ -32,7 +32,7 @@ INSTALL_REQUIRES = []
 ###################################################################
 
 about = {}
-with open(os.path.join("__about__.py")) as f:
+with codecs.open(os.path.join("__about__.py")) as f:
     exec(f.read(), about)
 
 with open("README.rst", "r") as fh:
