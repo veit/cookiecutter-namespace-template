@@ -78,6 +78,6 @@ setup(
     {%- endif %}
     install_requires=requirements,
     include_package_data=True,
-    packages=find_packages(include=['{{ cookiecutter.project_slug }}']),
+    packages=find_packages(include=['{{ cookiecutter.project_slug }}', '{{ cookiecutter.project_slug }}.*']),
     zip_safe=False,
 )
