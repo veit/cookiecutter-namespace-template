@@ -56,7 +56,6 @@ setup(
     {%- endif %}
     url=about["__url__"],
     keywords=KEYWORDS,
-    classifiers=CLASSIFIERS,
     classifiers=[
         'Development Status :: 2 - Pre-Alpha',
         'Intended Audience :: Developers',
