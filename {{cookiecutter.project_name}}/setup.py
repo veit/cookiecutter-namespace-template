@@ -16,23 +16,6 @@ META_PATH = os.path.join("{{cookiecutter.namespace}}", "{{cookiecutter.package_n
 KEYWORDS = [
     '{{ cookiecutter.project_slug }}',
 ]
-CLASSIFIERS = [
-    'Development Status :: 2 - Pre-Alpha',
-    'Intended Audience :: Developers',
-{%- if cookiecutter.license in license_classifiers %}
-    '{{ license_classifiers[cookiecutter.license] }}',
-{%- endif %}
-{%- if cookiecutter.license == 'Other/Proprietary License' %}
-    'Private :: Do Not Upload',
-{%- endif %}
-    'Natural Language :: English',
-    'Programming Language :: Python :: 3 :: Only',
-    'Programming Language :: Python :: 3.5',
-    'Programming Language :: Python :: 3.6',
-    'Programming Language :: Python :: 3.7',
-    'Programming Language :: Python :: 3.8',
-]
-
 ###################################################################
 
 about = {}
@@ -74,6 +57,18 @@ setup(
     url=about["__url__"],
     keywords=KEYWORDS,
     classifiers=CLASSIFIERS,
+    classifiers=[
+        'Development Status :: 2 - Pre-Alpha',
+        'Intended Audience :: Developers',
+{%- if cookiecutter.license in license_classifiers %}
+        '{{ license_classifiers[cookiecutter.license] }}',
+{%- endif %}
+        'Natural Language :: English',
+        'Programming Language :: Python :: 3',
+        'Programming Language :: Python :: 3.6',
+        'Programming Language :: Python :: 3.7',
+        'Programming Language :: Python :: 3.8',
+    ],
     {%- if 'no' not in cookiecutter.command_line_interface|lower %}
     entry_points={
         'console_scripts': [
