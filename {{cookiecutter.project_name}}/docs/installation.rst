@@ -17,6 +17,22 @@ To install {{ cookiecutter.project_name }}, run this command in your terminal:
 This is the preferred method to install {{ cookiecutter.project_name }}, as it
 will always install the most recent stable release.
 
+To create the documentation, you can install {{ cookiecutter.project_slug }}
+with the extra ``docs``:
+
+.. code-block:: console
+
+    $ pip install {{ cookiecutter.project_slug }}[docs]
+
+{% if cookiecutter.use_pytest == 'y' -%}
+To run the tests with pytest, you can install  {{ cookiecutter.project_slug }}
+with the extra ``tests``:
+
+.. code-block:: console
+
+    $ pip install {{ cookiecutter.project_slug }}[tests]
+
+{% endif %}
 If you don't have `pip <https://pip.pypa.io>`_ installed, this
 `Python installation guide <https://docs.python-guide.org/starting/installation/>`_
 can guide you through the process.

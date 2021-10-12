@@ -24,6 +24,17 @@ requirements = [
     {%- endif %}
 ]
 
+extras = {
+    "docs": [
+        "sphinx", "furo",
+    ],
+    "tests": [
+        {% if cookiecutter.use_pytest == 'y' -%}
+        "pytest",
+        {% endif %}
+    ],
+}
+
 {%- set license_classifiers = {
     'MIT license': 'License :: OSI Approved :: MIT License',
     'BSD license': 'License :: OSI Approved :: BSD License',
@@ -67,6 +78,7 @@ setup(
     },
     {%- endif %}
     install_requires=requirements,
+    extras_require=extras,
     include_package_data=True,
     packages=find_packages(include=['{{ cookiecutter.project_slug }}', '{{ cookiecutter.project_slug }}.*']),
     zip_safe=False,
