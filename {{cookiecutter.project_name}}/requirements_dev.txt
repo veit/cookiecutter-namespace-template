@@ -6,6 +6,7 @@ flake8==3.9.2
 tox==3.24.4
 coverage==6.0
 Sphinx==4.2.0
+furo==2021.8.31
 twine==3.4.2
 pep517==0.11.0
 {% if cookiecutter.command_line_interface|lower == 'click' -%}
