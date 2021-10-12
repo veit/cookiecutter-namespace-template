@@ -34,7 +34,7 @@ about = {}
 with codecs.open(os.path.join("__about__.py")) as f:
     exec(f.read(), about)
 
-with open("README.rst", "r") as fh:
+with codecs.open("README.rst", "r") as fh:
     long_description = fh.read()
 
 from distutils.core import setup
