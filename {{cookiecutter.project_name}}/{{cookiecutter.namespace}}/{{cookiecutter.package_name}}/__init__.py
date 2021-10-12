@@ -9,7 +9,7 @@ __version__ = "{{ cookiecutter.version }}"
 __author__ = "{{ cookiecutter.full_name.replace('\"', '\\\"') }}"
 __email__ = "{{ cookiecutter.email }}"
 
-__license__ = ("{{ cookiecutter.license }}",)
+__license__ = "{{ cookiecutter.license }}"
 
 __all__ = [
     "__title__",
