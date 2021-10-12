@@ -44,7 +44,6 @@ with codecs.open(os.path.join("__about__.py")) as f:
 with codecs.open("README.rst", "r") as fh:
     long_description = fh.read()
 
-from distutils.core import setup
 setup(
     name=about["__title__"],
     packages=find_packages(include=PACKAGES),
