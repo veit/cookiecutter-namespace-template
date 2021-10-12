@@ -7,17 +7,6 @@ import os
 
 from setuptools import setup, find_packages
 
-
-###################################################################
-
-PACKAGES = []
-META_PATH = os.path.join("{{cookiecutter.namespace}}", "{{cookiecutter.package_name}}", "__init__.py")
-
-KEYWORDS = [
-    '{{ cookiecutter.project_slug }}',
-]
-###################################################################
-
 about = {}
 with open(os.path.join("{{cookiecutter.namespace}}", "{{cookiecutter.package_name}}", "__init__.py")) as f:
     exec(f.read(), about)
@@ -55,7 +44,7 @@ setup(
     license=about["__license__"],
     {%- endif %}
     url=about["__url__"],
-    keywords=KEYWORDS,
+    keywords=["{{ cookiecutter.project_slug }}",],
     classifiers=[
         'Development Status :: 2 - Pre-Alpha',
         'Intended Audience :: Developers',
