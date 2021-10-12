@@ -8,13 +8,14 @@ import os
 from setuptools import setup, find_packages
 
 about = {}
-with open(os.path.join("{{cookiecutter.namespace}}", "{{cookiecutter.package_name}}", "__init__.py")) as f:
+
+with codecs.open(os.path.join("{{cookiecutter.namespace}}", "{{cookiecutter.package_name}}", "__init__.py")) as f:
     exec(f.read(), about)
 
-with open('README.rst') as readme_file:
+with codecs.open('README.rst') as readme_file:
     readme = readme_file.read()
 
-with open('HISTORY.rst') as history_file:
+with codecs.open('HISTORY.rst') as history_file:
     history = history_file.read()
 
 requirements = [
