@@ -27,6 +27,13 @@ CLASSIFIERS = [
     'Topic :: Software Development',
 ]
 INSTALL_REQUIRES = []
+EXTRAS_REQUIRE = {
+    "docs": ["sphinx", "furo"],
+    "tests": [
+        "pytest",
+        "pytest-cookies",
+    ],
+}
 
 ###################################################################
 
@@ -51,4 +58,6 @@ setup(
     url=about["__url__"],
     keywords=KEYWORDS,
     classifiers=CLASSIFIERS,
+    install_requires=INSTALL_REQUIRES,
+    extras_require=EXTRAS_REQUIRE,
 )
