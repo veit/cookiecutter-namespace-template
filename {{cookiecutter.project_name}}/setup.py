@@ -46,6 +46,7 @@ setup(
     {%- endif %}
     url=about["__url__"],
     keywords=["{{ cookiecutter.project_slug }}",],
+    python_requires='>=3.6',
     classifiers=[
         'Development Status :: 2 - Pre-Alpha',
         'Intended Audience :: Developers',
