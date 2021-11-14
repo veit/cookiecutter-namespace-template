@@ -3,7 +3,6 @@ import shlex
 import os
 import sys
 import subprocess
-import yaml
 import datetime
 from cookiecutter.utils import rmtree
 
