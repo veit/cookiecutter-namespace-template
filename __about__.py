@@ -7,7 +7,7 @@ __title__ = "cookiecutter-namespace-template"
 __summary__ = "Cookiecutter template for a Python namespace package"
 __url__ = "https://github.com/veit/cookiecutter-namespace-template"
 
-__version__ = "0.2.8"
+__version__ = "0.2.9"
 
 __author__ = "Veit Schiele"
 __email__ = "contact@veit-schiele.de"
