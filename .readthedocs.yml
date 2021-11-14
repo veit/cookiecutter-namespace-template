@@ -15,6 +15,7 @@ formats:
     - pdf
 
 python:
+  # Keep version in sync with tox.ini (docs).
   version: 3.8
   install:
     - requirements: requirements_dev.txt
