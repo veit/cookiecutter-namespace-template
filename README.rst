@@ -23,9 +23,11 @@ Template for a Python package.
 Features
 --------
 
+.. Keep python versions of tox in sync with tox.ini.
+
 * Testing setup with ``unittest`` or ``pytest``
 * `Tox <https://tox.readthedocs.io/>`_ testing: Setup to easily test for Python
-  3.5, 3.6, 3.7, 3.8
+  3.5, 3.6, 3.7, 3.8, 3.9 and 3.10.
 * `Sphinx <http://www.sphinx-doc.org/>`_ docs: Documentation ready for
   generation with, for example, ReadTheDocs_
 * `bump2version <https://github.com/c4urself/bump2version>`_: Pre-configured
