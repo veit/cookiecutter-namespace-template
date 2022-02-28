@@ -7,7 +7,7 @@ tox==3.24.5
 coverage==6.3
 Sphinx==4.4.0
 furo==2022.2.23
-twine==3.7.1
+twine==3.8.0
 pep517==0.12.0
 {% if cookiecutter.command_line_interface|lower == 'click' -%}
 click==7.1.2{% endif %}
