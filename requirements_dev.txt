@@ -2,7 +2,7 @@ pytest==7.2.0
 tox==4.0.8
 cookiecutter>=1.4.0
 pytest-cookies==0.6.1
-watchdog==2.1.7
+watchdog==2.2.0
 furo==2022.4.7
 twine==4.0.0
 pep517==0.12.0
