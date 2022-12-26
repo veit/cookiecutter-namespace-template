@@ -1,7 +1,7 @@
 pytest==7.2.0
 tox==4.0.18
 cookiecutter==2.1.1
-pytest-cookies
+pytest-cookies==0.6.1
 watchdog
 furo
 twine
