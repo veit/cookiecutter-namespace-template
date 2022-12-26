@@ -62,13 +62,13 @@ Then install cookiecutter:
 
 #. Install dev requirements
 
-    You should still be in the folder containing the ``requirements_dev.txt`` file.
+    You should still be in the folder containing the ``constraints_dev.txt`` file.
 
     Install the new project’s local development requirements:
 
     .. code-block:: bash
 
-        $ bin/pip install -r requirements_dev.txt
+        $ bin/pip install -r constraints_dev.txt
 
 #. Release on PyPI
 
