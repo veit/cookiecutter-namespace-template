@@ -6,7 +6,7 @@ flake8
 tox==4.0.18
 coverage
 Sphinx
-furo
+furo==2022.12.7
 twine
 pep517
 {% if cookiecutter.command_line_interface|lower == 'click' -%}
