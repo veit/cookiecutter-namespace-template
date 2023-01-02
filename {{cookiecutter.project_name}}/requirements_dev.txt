@@ -3,7 +3,7 @@ bump2version
 wheel
 watchdog
 flake8
-tox
+tox==4.1.2
 coverage
 Sphinx
 furo
