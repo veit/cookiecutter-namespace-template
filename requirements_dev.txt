@@ -3,6 +3,6 @@ tox==4.3.2
 cookiecutter==2.1.1
 pytest-cookies==0.6.1
 watchdog==2.2.1
-furo
+furo==2022.12.7
 twine
 pep517
