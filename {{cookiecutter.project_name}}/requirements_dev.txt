@@ -12,7 +12,7 @@ pep517
 {% if cookiecutter.command_line_interface|lower == 'click' -%}
 click{% endif %}
 {% if cookiecutter.use_pytest == 'y' -%}
-pytest
+pytest==7.2.1
 pytest-runner{% endif %}
 {% if cookiecutter.use_black == 'y' -%}
 black{% endif %}
