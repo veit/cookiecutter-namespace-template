@@ -8,7 +8,7 @@ coverage
 Sphinx
 furo==2022.12.7
 twine==4.0.2
-pep517
+pep517==0.13.0
 {% if cookiecutter.command_line_interface|lower == 'click' -%}
 click{% endif %}
 {% if cookiecutter.use_pytest == 'y' -%}
