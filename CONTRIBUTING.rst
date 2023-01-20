@@ -85,7 +85,7 @@ and ready to go.
 
    .. code-block:: bash
 
-    $ git checkout -b name-of-your-bugfix-or-feature
+    $ git switch -c NAME-OF-YOUR-BUGFIX-OR-FEATURE-BRANCH
 
    Now you can make your changes locally.
 
@@ -130,8 +130,8 @@ and ready to go.
    .. code-block:: bash
 
     $ git add .
-    $ git commit -m "Your detailed description of your changes."
-    $ git push origin name-of-your-bugfix-or-feature
+    $ git commit -m 'YOUR DETAILED DESCRIPTION OF YOUR CHANGES.'
+    $ git push origin NAME-OF-YOUR-BUGFIX-OR FEATURE-BRANCH
 
 #. Submit a pull request through the GitHub website.
 
@@ -192,4 +192,3 @@ To write and run your new test, follow these steps:
 
 #. Rerun your test and confirm that your test passes. If it passes,
    congratulations!
-
