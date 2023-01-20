@@ -5,7 +5,7 @@
 import codecs
 import os
 
-from setuptools import setup, find_packages
+from setuptools import find_packages, setup
 
 about = {}
 
@@ -25,14 +25,8 @@ requirements = [
 ]
 
 extras = {
-    "docs": [
-        "sphinx", "furo",
-    ],
-    "tests": [
-        {% if cookiecutter.use_pytest == 'y' -%}
-        "pytest",
-        {% endif %}
-    ],
+    "docs": ["sphinx", "furo",],
+    "tests": [{% if cookiecutter.use_pytest == 'y' -%}"pytest",{% endif %}],
 }
 
 {%- set license_classifiers = {
@@ -73,11 +67,7 @@ setup(
         'Programming Language :: Python :: 3.10',
     ],
     {%- if 'no' not in cookiecutter.command_line_interface|lower %}
-    entry_points={
-        'console_scripts': [
-            '{{ cookiecutter.project_slug }}={{ cookiecutter.project_slug }}.cli:main',
-        ],
-    },
+    entry_points={'console_scripts': ['{{ cookiecutter.project_slug }}={{ cookiecutter.project_slug }}.cli:main',],},
     {%- endif %}
     install_requires=requirements,
     extras_require=extras,
