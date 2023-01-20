@@ -98,7 +98,7 @@ and ready to go.
     $ python -m flake8 ./tests
 
 #. The next step would be to run the test cases.
-   `cookiecutter-namespace-template` uses ``pytest``. Before you run pytest
+   ``cookiecutter-namespace-template`` uses ``pytest``. Before you run pytest
    you should ensure all dependancies are installed:
 
    .. code-block:: bash
@@ -108,6 +108,8 @@ and ready to go.
 
    If you get any errors while installing cryptography package (something like
    ``#include <openssl/aes.h>``). Please update your pip version and try again:
+
+   .. code-block:: bash
 
     $ python -m pip install -U pip
 
@@ -157,8 +159,8 @@ focus on one tiny bit of functionality and prove changes are correct.
 
 To write and run your new test, follow these steps:
 
-#. Add the new test to `tests/test_bake_project.py`. Focus your test on the
-   specific bug or a small part of the new feature.
+#. Add the new test to :file:`tests/test_bake_project.py`. Focus your test on
+   the specific bug or a small part of the new feature.
 
 #. If you have already made changes to the code, stash your changes and confirm
    all your changes were stashed:
