@@ -49,11 +49,11 @@ You can either clone the public repository:
 
     $ git clone git://github.com/{{ cookiecutter.github_username }}/{{ cookiecutter.project_slug }}
 
-Or download the `tarball <https://github.com/{{ cookiecutter.github_username }}/{{ cookiecutter.project_slug }}/tarball/master>`_:
+Or download the `tarball <https://github.com/{{ cookiecutter.github_username }}/{{ cookiecutter.project_slug }}/tarball/main>`_:
 
 .. code-block:: console
 
-    $ curl  -OL https://github.com/{{ cookiecutter.github_username }}/{{ cookiecutter.project_slug }}/tarball/master
+    $ curl  -OL https://github.com/{{ cookiecutter.github_username }}/{{ cookiecutter.project_slug }}/tarball/main
 
 Once you have a copy of the source, you can install it with:
 

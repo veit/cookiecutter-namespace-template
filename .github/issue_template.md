@@ -40,7 +40,7 @@ I’m submitting a …
 
 * Which operating system do you use?
 
-For more information, see the [Contributing](https://github.com/veit/cookiecutter-namespace-template/blob/master/CONTRIBUTING.rst) guide.
+For more information, see the [Contributing](https://github.com/veit/cookiecutter-namespace-template/blob/main/CONTRIBUTING.rst) guide.
 
 ## Description
 

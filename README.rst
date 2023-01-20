@@ -16,7 +16,7 @@ Template for a Python package.
 .. |Contributors| image:: https://img.shields.io/github/contributors/veit/cookiecutter-namespace-template.svg
    :target: https://github.com/veit/cookiecutter-namespace-template/graphs/contributors
 .. |License| image:: https://img.shields.io/github/license/veit/cookiecutter-namespace-template.svg
-   :target: https://github.com/veit/cookiecutter-namespace-template/blob/master/LICENSE
+   :target: https://github.com/veit/cookiecutter-namespace-template/blob/main/LICENSE
 .. |Docs| image:: https://readthedocs.org/projects/cookiecutter-namespace-template/badge/?version=latest
    :target: https://cookiecutter-namespace-template.readthedocs.io/en/latest/
 
@@ -33,7 +33,7 @@ Features
 * `bump2version <https://github.com/c4urself/bump2version>`_: Pre-configured
   version bumping with a single command
 * Optional auto-release to `PyPI <https://pypi.org/>`_ when you push a new tag
-  to master (optional)
+  to main (optional)
 * Optional command line interface using `Click
   <https://palletsprojects.com/p/click/>`_
 
@@ -68,7 +68,7 @@ Quickstart
    #. click on the green *Add Repo* button
    #. click *Pin* to add the repo
 
-#. Release your package by pushing a new tag to master.
+#. Release your package by pushing a new tag to main.
 
 Pull requests
 ~~~~~~~~~~~~~

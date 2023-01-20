@@ -52,7 +52,7 @@ Then install cookiecutter:
         $ git add .
         $ git commit -m "Initial commit"
         $ git remote add origin git@example.org:myusername/my.package.git
-        $ git push -u origin master
+        $ git push -u origin main
 
     Where ``myusername`` and ``my.package`` are adjusted for your username and
     package name.

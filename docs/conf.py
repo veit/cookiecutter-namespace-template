@@ -49,8 +49,8 @@ source_suffix = ".rst"
 # The encoding of source files.
 # source_encoding = 'utf-8-sig'
 
-# The master toctree document.
-master_doc = "index"
+# The root toctree document.
+root_doc = "index"
 
 # General information about the project.
 project = "cookiecutter-namespace-template"
@@ -227,7 +227,7 @@ latex_elements = {
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
     (
-        master_doc,
+        root_doc,
         "cookiecutter-namespace-template.tex",
         "cookiecutter-namespace-template Documentation",
         "Veit Schiele",
@@ -262,7 +262,7 @@ latex_documents = [
 # (source start file, name, description, authors, manual section).
 man_pages = [
     (
-        master_doc,
+        root_doc,
         "cookiecutter-namespace-template",
         "cookiecutter-namespace-template Documentation",
         [author],
@@ -281,7 +281,7 @@ man_pages = [
 #  dir menu entry, description, category)
 texinfo_documents = [
     (
-        master_doc,
+        root_doc,
         "cookiecutter-namespace-template",
         "cookiecutter-namespace-template Documentation",
         author,
