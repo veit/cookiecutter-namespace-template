@@ -95,7 +95,7 @@ and ready to go.
 
    .. code-block:: bash
 
-    $ flake8 ./tests
+    $ python -m flake8 ./tests
 
 #. The next step would be to run the test cases.
    `cookiecutter-namespace-template` uses ``pytest``. Before you run pytest
@@ -103,20 +103,20 @@ and ready to go.
 
    .. code-block:: bash
 
-    $ pip install -r requirements_dev.txt
-    $ pytest ./tests
+    $ python -m pip install -r requirements_dev.txt
+    $ python -m pytest ./tests
 
    If you get any errors while installing cryptography package (something like
    ``#include <openssl/aes.h>``). Please update your pip version and try again:
 
-    $ pip install -U pip
+    $ python -m pip install -U pip
 
 #. Before raising a pull request you should also run tox. This will run the
    tests across different versions of Python:
 
    .. code-block:: bash
 
-    $ tox
+    $ python -m tox
 
    .. note::
       If you are missing flake8, pytest and/or tox, just pip install them into
@@ -173,14 +173,14 @@ To write and run your new test, follow these steps:
 
    .. code-block:: bash
 
-    $ pytest ./tests
+    $ python -m pytest ./tests
 
 #. (Optional) Run the tests with tox to ensure that the code changes work with
    different Python versions:
 
    .. code-block:: bash
 
-    $ tox
+    $ python -m tox
 
 #. Proceed work on your bug fix or new feature or restore your changes. To
    restore your stashed changes and confirm their restoration:
