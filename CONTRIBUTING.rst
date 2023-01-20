@@ -69,9 +69,7 @@ and ready to go.
     $ cd path/for/the/repo
     $ git clone git@github.com:YOUR_NAME/cookiecutter-namespace-template.git
 
-#. Assuming you have virtualenv installed (If you have Python3.5 this should
-   already be there), you can create a new environment for your local
-   development by typing:
+#. You can create a new environment for your local development by typing:
 
    .. code-block:: bash
 
@@ -80,6 +78,14 @@ and ready to go.
 
    This should change the shell to look something like
    ``(cookiecutter-namespace-template-env) $``
+
+#. You can then install all the necessary development tools with:
+
+   .. code-block:: bash
+
+    $ python -m pip install -r requirements_dev.txt
+    $ pre-commit install
+    pre-commit installed at .git/hooks/pre-commit
 
 #. Create a branch for local development:
 

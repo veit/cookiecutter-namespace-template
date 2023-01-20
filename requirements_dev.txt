@@ -1,8 +1,8 @@
-pytest
-tox
 cookiecutter
+pytest
 pytest-cookies
-watchdog
+tox
+pre-commit
 furo
 twine
 pep517

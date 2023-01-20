@@ -1,18 +1,19 @@
-pip
+cookiecutter
+{% if cookiecutter.command_line_interface|lower == 'click' -%}
+click{% endif %}
+pre-commit
 bump2version
-wheel
-watchdog
 flake8
-tox
+{% if cookiecutter.use_black == 'y' -%}
+black{% endif %}
+{% if cookiecutter.use_pytest == 'y' -%}
+pytest
+pytest-runner
+pytest-cookies
+{% endif %}
 coverage
+tox
 Sphinx
 furo
 twine
 pep517
-{% if cookiecutter.command_line_interface|lower == 'click' -%}
-click{% endif %}
-{% if cookiecutter.use_pytest == 'y' -%}
-pytest
-pytest-runner{% endif %}
-{% if cookiecutter.use_black == 'y' -%}
-black{% endif %}
