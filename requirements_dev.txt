@@ -1,4 +1,6 @@
 cookiecutter
+black
+isort
 pytest
 pytest-cookies
 tox

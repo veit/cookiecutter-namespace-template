@@ -5,7 +5,8 @@ pre-commit
 bump2version
 flake8
 {% if cookiecutter.use_black == 'y' -%}
-black{% endif %}
+black
+isort{% endif %}
 {% if cookiecutter.use_pytest == 'y' -%}
 pytest
 pytest-runner
