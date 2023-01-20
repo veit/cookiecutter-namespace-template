@@ -3,37 +3,39 @@
 import codecs
 import os
 
-from setuptools import setup, find_packages
+from setuptools import find_packages, setup
+
 
 ###################################################################
 
 PACKAGES = []
 META_PATH = os.path.join("__about__.py")
-KEYWORDS = ['cookiecutter', 'template', 'package', ]
+KEYWORDS = [
+    "cookiecutter",
+    "template",
+    "package",
+]
 CLASSIFIERS = [
-    'Development Status :: 4 - Beta',
-    'Environment :: Console',
-    'Intended Audience :: Developers',
-    'Natural Language :: English',
-    'License :: OSI Approved :: BSD License',
-    'Programming Language :: Python',
-    'Programming Language :: Python :: 3 :: Only',
-    'Programming Language :: Python :: 3.7',
-    'Programming Language :: Python :: 3.8',
-    'Programming Language :: Python :: 3.9',
-    'Programming Language :: Python :: 3.10',
-    'Programming Language :: Python :: 3.11',
-    'Programming Language :: Python :: Implementation :: CPython',
-    'Programming Language :: Python :: Implementation :: PyPy',
-    'Topic :: Software Development',
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "Natural Language :: English",
+    "License :: OSI Approved :: BSD License",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: Implementation :: CPython",
+    "Programming Language :: Python :: Implementation :: PyPy",
+    "Topic :: Software Development",
 ]
 INSTALL_REQUIRES = []
 EXTRAS_REQUIRE = {
     "docs": ["sphinx", "furo"],
-    "tests": [
-        "pytest",
-        "pytest-cookies",
-    ],
+    "tests": ["pytest", "pytest-cookies",],
 }
 
 ###################################################################

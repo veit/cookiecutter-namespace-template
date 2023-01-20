@@ -52,4 +52,3 @@ With ``my.package`` adjusted to the specific project.
 
 .. seealso::
     https://click.palletsprojects.com/
-

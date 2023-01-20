@@ -55,4 +55,3 @@ For more information, see the [Contributing](https://github.com/veit/cookiecutte
 * **Expected behavior:** [What you expected to happen]
 * **Actual behavior:** [What actually happened]
 * **Other information:** [Detailed explanation, stacktraces, related issues, suggestions how to fix, links for us to have context, eg. stackoverflow, gitter, etc]
-

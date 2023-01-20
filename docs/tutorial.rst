@@ -78,4 +78,3 @@ Then install cookiecutter:
     * `Packaging Python Projects
       <https://packaging.python.org/tutorials/packaging-projects/>`_
     * `Python Packaging User Guide <https://packaging.python.org/>`_
-

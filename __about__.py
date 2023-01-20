@@ -1,6 +1,12 @@
 __all__ = [
-    "__title__", "__summary__", "__uri__", "__version__", "__author__",
-    "__email__", "__license__", "__copyright__",
+    "__title__",
+    "__summary__",
+    "__uri__",
+    "__version__",
+    "__author__",
+    "__email__",
+    "__license__",
+    "__copyright__",
 ]
 
 __title__ = "cookiecutter-namespace-template"
@@ -14,4 +20,3 @@ __email__ = "contact@veit-schiele.de"
 
 __license__ = "BSD"
 __copyright__ = "Copyright 2017–2021 {}".format(__author__)
-

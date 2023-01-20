@@ -1,6 +1,6 @@
 ## Prerequisites
 
-* Did you create an issue before submitting the pull request? 
+* Did you create an issue before submitting the pull request?
 * Does the commit message follows the Python Developer’s Guidelines for [Accepting Pull Requests](https://devguide.python.org/committing/)?
 * Have the tests been changed or new ones written (for bug fixes/features)?
 * Have docs been added/updated (for bug fixes/features)?
@@ -19,4 +19,3 @@
   <dt>Other information:</dt>
   <dd>[What further information is there about this PR?]</dd>
 </dl>
-

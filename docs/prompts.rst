@@ -42,4 +42,3 @@ project.
     Whether to create a console script using :doc:`Click <console-script-setup>`
     Console script entry point will match the ``project_slug``. Options:
     ``['Click', "No command-line interface"]``
-
