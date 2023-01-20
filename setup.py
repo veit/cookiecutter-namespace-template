@@ -35,7 +35,10 @@ CLASSIFIERS = [
 INSTALL_REQUIRES = []
 EXTRAS_REQUIRE = {
     "docs": ["sphinx", "furo"],
-    "tests": ["pytest", "pytest-cookies",],
+    "tests": [
+        "pytest",
+        "pytest-cookies",
+    ],
 }
 
 ###################################################################
