@@ -27,7 +27,7 @@ Features
 
 * Testing setup with ``unittest`` or ``pytest``
 * `Tox <https://tox.readthedocs.io/>`_ testing: Setup to easily test for Python
-  3.5, 3.6, 3.7, 3.8, 3.9 and 3.10.
+  3.7, 3.8, 3.9, 3.10 and 3.11.
 * `Sphinx <http://www.sphinx-doc.org/>`_ docs: Documentation ready for
   generation with, for example, ReadTheDocs_
 * `bump2version <https://github.com/c4urself/bump2version>`_: Pre-configured
@@ -62,7 +62,7 @@ Quickstart
    turn on the ReadTheDocs service hook.
 
 #. If you want to add the pyup badge to your README file
-   
+
    #. create a new account at `pyup.io <https://pyup.io>`_ or log into your
       existing account
    #. click on the green *Add Repo* button
