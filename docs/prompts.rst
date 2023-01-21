@@ -39,6 +39,8 @@ The following package configuration options set up different features for your
 project.
 
 ``command_line_interface``
-    Whether to create a console script using :doc:`Click <console-script-setup>`
+    Whether to create a :doc:`console script <console-script-setup>` using Typer
+    or Click.
+
     Console script entry point will match the ``project_slug``. Options:
-    ``['Click', "No command-line interface"]``
+    ``['Typer', 'Click', "No command-line interface"]``

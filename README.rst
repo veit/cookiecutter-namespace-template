@@ -36,8 +36,8 @@ Features
   version bumping with a single command
 * Optional auto-release to `PyPI <https://pypi.org/>`_ when you push a new tag
   to main (optional)
-* Optional command line interface using `Click
-  <https://palletsprojects.com/p/click/>`_
+* Optional command line interface using `Typer <https://typer.tiangolo.com>`_ or
+  `Click <https://palletsprojects.com/p/click/>`_
 
 If you really want to create a new package with Python 2, in spite of the
 `Python 2.7 countdown <https://pythonclock.org/>`_ and the `Sunsetting Python 2

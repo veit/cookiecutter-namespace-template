@@ -66,7 +66,10 @@ setup(
         'Programming Language :: Python :: 3.9',
         'Programming Language :: Python :: 3.10',
     ],
-    {%- if 'no' not in cookiecutter.command_line_interface|lower %}
+    {%- if cookiecutter.command_line_interface|lower in 'typer' %}
+    entry_points={'console_scripts': ['{{ cookiecutter.project_slug }}={{ cookiecutter.project_slug }}.cli:app',],},
+    {%- endif %}
+    {%- if cookiecutter.command_line_interface|lower in ('click', 'argparse') %}
     entry_points={'console_scripts': ['{{ cookiecutter.project_slug }}={{ cookiecutter.project_slug }}.cli:main',],},
     {%- endif %}
     install_requires=requirements,

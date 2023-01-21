@@ -1,10 +1,12 @@
 cookiecutter
+click
+typer
+pre-commit
 black
 isort
 pytest
 pytest-cookies
 tox
-pre-commit
 furo
 twine
 pep517

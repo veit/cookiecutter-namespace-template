@@ -7,12 +7,15 @@ import pytest
 {% else %}
 import unittest
 {%- endif %}
+{%- if cookiecutter.command_line_interface|lower == 'typer' %}
+from typer.testing import CliRunner
+{%- endif %}
 {%- if cookiecutter.command_line_interface|lower == 'click' %}
 from click.testing import CliRunner
 {%- endif %}
 
 # from {{ cookiecutter.project_slug }} import {{ cookiecutter.project_slug }}
-{%- if cookiecutter.command_line_interface|lower == 'click' %}
+{%- if cookiecutter.command_line_interface|lower in ('typer', 'click') %}
 from {{ cookiecutter.project_slug }} import cli
 {%- endif %}
 
@@ -33,7 +36,7 @@ def test_content(response):
     """Sample pytest test function with the pytest fixture as an argument."""
     # from bs4 import BeautifulSoup
     # assert 'GitHub' in BeautifulSoup(response.content).title.string
-{%- if cookiecutter.command_line_interface|lower == 'click' %}
+{%- if cookiecutter.command_line_interface|lower in ('typer', 'click') %}
 
 
 def test_command_line_interface():
@@ -60,7 +63,7 @@ class Test{{ cookiecutter.project_slug|title }}(unittest.TestCase):
 
     def test_something(self):
         """Test something."""
-{%- if cookiecutter.command_line_interface|lower == 'click' %}
+{%- if cookiecutter.command_line_interface|lower in ('typer', 'click') %}
 
     def test_command_line_interface(self):
         """Test the CLI."""
