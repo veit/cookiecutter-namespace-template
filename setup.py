@@ -49,7 +49,7 @@ with codecs.open("README.rst", "r") as fh:
 setup(
     name="cookiecutter-namespace-template",
     packages=find_packages(include=PACKAGES),
-    version="0.2.10",
+    version="0.3.0",
     description="Cookiecutter template for a Python namespace package",
     long_description=long_description,
     long_description_content_type="text/x-rst",
