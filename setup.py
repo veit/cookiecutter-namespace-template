@@ -9,7 +9,6 @@ from setuptools import find_packages, setup
 ###################################################################
 
 PACKAGES = []
-META_PATH = os.path.join("__about__.py")
 KEYWORDS = [
     "cookiecutter",
     "template",
@@ -44,23 +43,20 @@ EXTRAS_REQUIRE = {
 ###################################################################
 
 about = {}
-with codecs.open(os.path.join("__about__.py")) as f:
-    exec(f.read(), about)
-
 with codecs.open("README.rst", "r") as fh:
     long_description = fh.read()
 
 setup(
-    name=about["__title__"],
+    name="cookiecutter-namespace-template",
     packages=find_packages(include=PACKAGES),
-    version=about["__version__"],
-    description=about["__summary__"],
+    version="0.2.10",
+    description="Cookiecutter template for a Python namespace package",
     long_description=long_description,
     long_description_content_type="text/x-rst",
-    author=about["__author__"],
-    license=about["__license__"],
-    author_email=about["__email__"],
-    url=about["__url__"],
+    author="Veit Schiele",
+    license="BSD",
+    author_email="contact@veit-schiele.de",
+    url="https://github.com/veit/cookiecutter-namespace-template",
     keywords=KEYWORDS,
     classifiers=CLASSIFIERS,
     install_requires=INSTALL_REQUIRES,
