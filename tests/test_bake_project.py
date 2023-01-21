@@ -207,8 +207,8 @@ def test_bake_with_no_console_script(cookies):
         assert "entry_points" not in setup_file.read()
 
 
-def test_bake_with_console_script_files(cookies):
-    context = {"command_line_interface": "click"}
+def test_bake_with_click_console_script_file(cookies):
+    context = {"command_line_interface": "Click"}
     result = cookies.bake(extra_context=context)
     project_path, project_slug, package_dir = project_info(result)
     found_project_files = os.listdir(package_dir)
@@ -219,8 +219,8 @@ def test_bake_with_console_script_files(cookies):
         assert "entry_points" in setup_file.read()
 
 
-def test_bake_with_argparse_console_script_files(cookies):
-    context = {"command_line_interface": "argparse"}
+def test_bake_with_argparse_console_script_file(cookies):
+    context = {"command_line_interface": "Argparse"}
     result = cookies.bake(extra_context=context)
     project_path, project_slug, project_dir = project_info(result)
     found_project_files = os.listdir(project_dir)
@@ -232,7 +232,7 @@ def test_bake_with_argparse_console_script_files(cookies):
 
 
 def test_bake_with_console_script_cli(cookies):
-    context = {"command_line_interface": "click"}
+    context = {"command_line_interface": "Click"}
     result = cookies.bake(extra_context=context)
     project_path, project_slug, project_dir = project_info(result)
     module_path = os.path.join(project_dir, "cli.py")
@@ -259,10 +259,10 @@ def test_bake_with_console_script_cli(cookies):
 
 
 def test_bake_with_argparse_console_script_cli(cookies):
-    context = {"command_line_interface": "argparse"}
+    context = {"command_line_interface": "Argparse"}
     result = cookies.bake(extra_context=context)
-    project_path, project_slug, package_dir = project_info(result)
-    module_path = os.path.join(package_dir, "cli.py")
+    project_path, project_slug, project_dir = project_info(result)
+    module_path = os.path.join(project_dir, "cli.py")
     module_name = ".".join([project_slug, "cli"])
     if sys.version_info >= (3, 5):
         spec = importlib.util.spec_from_file_location(module_name, module_path)
