@@ -14,7 +14,7 @@ __license__ = "{{ cookiecutter.license }}"
 __all__ = [
     "__title__",
     "__summary__",
-    "__uri__",
+    "__url__",
     "__version__",
     "__author__",
     "__email__",
