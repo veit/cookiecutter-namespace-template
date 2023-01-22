@@ -1,4 +1,6 @@
 cruft
+{% if cookiecutter.command_line_interface|lower == 'typer' -%}
+typer{% endif %}
 {% if cookiecutter.command_line_interface|lower == 'click' -%}
 click{% endif %}
 pre-commit
@@ -14,7 +16,6 @@ pytest-cookies
 {% endif %}
 coverage
 tox
-Sphinx
 furo
 twine
 pep517
