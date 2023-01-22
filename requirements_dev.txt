@@ -1,4 +1,4 @@
-cookiecutter
+cruft
 click
 typer
 pre-commit

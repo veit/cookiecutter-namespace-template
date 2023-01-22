@@ -1,33 +1,34 @@
 Tutorial
 ========
 
-#. Install Cookiecutter
+#. Install cruft
 
     First, you need to create a virtualenv for the package project. Use your
     favorite method, or create a virtualenv for your new package like this:
 
-    .. code-block:: bash
+    .. code-block:: console
 
-        virtualenv ~/.virtualenvs/my.package
+        python3 -m venv ~/.virtualenvs/my.package
 
     Here, ``my.package`` is the name of the package that you’ll create.
 
-Then install cookiecutter:
+Then install cruft:
 
-    .. code-block:: bash
+    .. code-block:: console
 
         $ cd ~/.virtualenvs/my.package
-        $ bin/pip install cookiecutter
+        $ source bin/activate
+        $ python -m pip install cruft
 
 #. Generate Your Package
 
     Now it’s time to generate your Python package.
 
-    Use cookiecutter, pointing it at the cookiecutter-namespace-template repo:
+    Use cruft, pointing it at the cookiecutter-namespace-template repo:
 
-    .. code-block:: bash
+    .. code-block:: console
 
-        cookiecutter https://github.com/veit/cookiecutter-namespace-template.git
+        $ cruft create https://github.com/veit/cookiecutter-namespace-template.git
 
     You’ll be asked to enter a bunch of values to set the package up.
     If you don't know what to enter, stick with the defaults.
@@ -39,8 +40,8 @@ Then install cookiecutter:
     running cookiecutter.
 
     .. note::
-        If your virtualenv folder is within your project folder, be sure to add
-        the virtualenv folder name to your ``.gitignore`` file.
+        If your venv folder is within your project folder, be sure to add
+        the venv folder name to your ``.gitignore`` file.
 
     You will find one folder named after the ``[namespace.package]``. Move into
     this folder, and then setup git to use your Git repo and upload the code:
@@ -51,11 +52,11 @@ Then install cookiecutter:
         $ git init .
         $ git add .
         $ git commit -m "Initial commit"
-        $ git remote add origin git@example.org:myusername/my.package.git
+        $ git remote add origin git@example.org:MYUSERNAME/MY.PYCKAGE.git
         $ git push -u origin main
 
-    Where ``myusername`` and ``my.package`` are adjusted for your username and
-    package name.
+    Where :samp:`{MYUSERNAME}` and :samp:`{MY.PACKAGE}` are adjusted for your
+    username and package name.
 
     You’ll need a ssh key to push the repo. You can generate a key or add an
     existing one.
@@ -66,9 +67,9 @@ Then install cookiecutter:
 
     Install the new project’s local development requirements:
 
-    .. code-block:: bash
+    .. code-block:: console
 
-        $ bin/pip install -r constraints_dev.txt
+        $ python -m pip install -r constraints_dev.txt
 
 #. Release on PyPI
 

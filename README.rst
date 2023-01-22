@@ -34,6 +34,14 @@ Features
   generation with, for example, ReadTheDocs_
 * `bump2version <https://github.com/c4urself/bump2version>`_: Pre-configured
   version bumping with a single command
+* If the `cookiecutter-namespace-template
+  <https://github.com/veit/cookiecutter-namespace-template>`_ project template
+  has been changed, you can apply these changes with
+
+  .. code-block:: console
+
+     $ cruft update
+
 * Optional auto-release to `PyPI <https://pypi.org/>`_ when you push a new tag
   to main (optional)
 * Optional command line interface using `Typer <https://typer.tiangolo.com>`_ or
@@ -48,13 +56,17 @@ Quickstart
 ----------
 
 #. Install the latest Cookiecutter if you haven’t installed it yet (this requires
-   Cookiecutter 1.4.0 or higher)::
+   Cookiecutter 1.4.0 or higher):
 
-    $ python -m pip install -U cookiecutter
+   .. code-block:: console
 
-#. Generate a Python package project::
+      $ python -m pip install -U cruft
 
-    $ python -m cookiecutter https://github.com/veit/cookiecutter-namespace-template.git
+#. Generate a Python package project:
+
+   .. code-block:: console
+
+      $ python -m cruft create https://github.com/veit/cookiecutter-namespace-template.git
 
 #. Create a repo and put it there.
 
