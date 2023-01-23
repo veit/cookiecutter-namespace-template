@@ -6,7 +6,7 @@ black==22.12.0
 isort==5.11.4
 pytest==7.2.1
 pytest-cookies==0.6.1
-tox
+tox==4.3.5
 furo
 twine
 pep517
