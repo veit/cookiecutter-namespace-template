@@ -12,7 +12,7 @@ isort{% endif %}
 {% if cookiecutter.use_pytest == 'y' -%}
 pytest==7.2.1
 pytest-runner
-pytest-cookies
+pytest-cookies==0.6.1
 {% endif %}
 coverage
 tox
