@@ -10,7 +10,7 @@ flake8
 black==22.12.0
 isort{% endif %}
 {% if cookiecutter.use_pytest == 'y' -%}
-pytest
+pytest==7.2.1
 pytest-runner
 pytest-cookies
 {% endif %}
