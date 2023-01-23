@@ -7,6 +7,6 @@ isort==5.11.4
 pytest==7.2.1
 pytest-cookies==0.6.1
 tox==4.3.5
-furo
+furo==2022.12.7
 twine
 pep517
