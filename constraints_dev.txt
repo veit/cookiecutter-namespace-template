@@ -76,4 +76,4 @@ typer==0.7.0
 urllib3==1.26.14
 virtualenv==20.17.1
 webencodings==0.5.1
-zipp==3.11.0
+zipp==3.12.0
