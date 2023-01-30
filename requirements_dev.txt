@@ -1,4 +1,4 @@
-cruft
+cruft==2.12.0
 click
 typer
 pre-commit
