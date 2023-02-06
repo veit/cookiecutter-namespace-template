@@ -74,6 +74,6 @@ tox==4.4.4
 twine==4.0.2
 typer==0.7.0
 urllib3==1.26.14
-virtualenv==20.17.1
+virtualenv==20.18.0
 webencodings==0.5.1
 zipp==3.11.0
