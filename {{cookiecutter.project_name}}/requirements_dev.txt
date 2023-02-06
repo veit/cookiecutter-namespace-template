@@ -18,4 +18,4 @@ coverage
 tox==4.4.4
 furo==2022.12.7
 twine==4.0.2
-pep517
+pep517==0.13.0
