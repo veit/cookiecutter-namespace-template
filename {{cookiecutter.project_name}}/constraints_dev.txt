@@ -47,7 +47,7 @@ pep517==0.13.0
 pkginfo==1.9.6
 platformdirs==2.6.2
 pluggy==1.0.0
-pre-commit==2.21.0
+pre-commit==3.0.4
 pycodestyle==2.10.0
 pyflakes==3.0.1
 Pygments==2.14.0
