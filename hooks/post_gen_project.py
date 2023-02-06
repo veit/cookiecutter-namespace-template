@@ -18,7 +18,6 @@ def remove_package_file(filepath):
 
 
 if __name__ == "__main__":
-
     if "{{ cookiecutter.create_author_file }}" != "y":
         remove_project_file("AUTHORS.rst")
         remove_project_file("docs/authors.rst")
