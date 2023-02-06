@@ -17,5 +17,5 @@ pytest-cookies==0.6.1
 coverage
 tox==4.4.4
 furo==2022.12.7
-twine
+twine==4.0.2
 pep517
