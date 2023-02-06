@@ -16,6 +16,6 @@ pytest-cookies==0.6.1
 {% endif %}
 coverage
 tox==4.4.4
-furo
+furo==2022.12.7
 twine
 pep517
