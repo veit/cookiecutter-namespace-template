@@ -5,7 +5,7 @@ typer{% endif %}
 click{% endif %}
 pre-commit==3.0.4
 bump2version==1.0.1
-flake8
+flake8==6.0.0
 {% if cookiecutter.use_black == 'y' -%}
 black==23.1.0
 isort{% endif %}
