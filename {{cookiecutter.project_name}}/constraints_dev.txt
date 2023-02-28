@@ -39,7 +39,7 @@ markdown-it-py==2.2.0
 MarkupSafe==2.1.2
 mccabe==0.7.0
 mdurl==0.1.2
-more-itertools==9.0.0
+more-itertools==9.1.0
 mypy-extensions==1.0.0
 nodeenv==1.7.0
 packaging==23.0
