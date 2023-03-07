@@ -15,7 +15,7 @@ pytest-runner
 pytest-cookies==0.6.1
 {% endif %}
 coverage
-tox
+tox==4.4.6
 furo
 twine
 pep517
