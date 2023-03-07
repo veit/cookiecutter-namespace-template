@@ -4,7 +4,7 @@ typer==0.7.0
 pre-commit==3.1.1
 black==23.1.0
 isort==5.12.0
-pytest
+pytest==7.2.2
 pytest-cookies
 tox
 furo
