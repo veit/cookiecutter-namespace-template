@@ -14,7 +14,7 @@ pytest==7.2.2
 pytest-runner==6.0.0
 pytest-cookies==0.6.1
 {% endif %}
-coverage
+coverage==7.2.1
 tox==4.4.7
 furo==2022.12.7
 twine==4.0.2
