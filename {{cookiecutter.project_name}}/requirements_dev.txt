@@ -7,7 +7,7 @@ pre-commit==3.1.1
 bump2version
 flake8
 {% if cookiecutter.use_black == 'y' -%}
-black
+black==23.1.0
 isort{% endif %}
 {% if cookiecutter.use_pytest == 'y' -%}
 pytest
