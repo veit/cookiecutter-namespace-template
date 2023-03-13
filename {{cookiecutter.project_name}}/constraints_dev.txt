@@ -19,7 +19,7 @@ coverage==7.2.1
 cruft==2.12.0
 distlib==0.3.6
 docutils==0.19
-exceptiongroup==1.1.0
+exceptiongroup==1.1.1
 filelock==3.9.0
 flake8==6.0.0
 furo==2022.12.7
