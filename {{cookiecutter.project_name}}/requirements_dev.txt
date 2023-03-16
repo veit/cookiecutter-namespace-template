@@ -1,20 +1,13 @@
+-c constraints_dev.txt
+
 cruft
-{% if cookiecutter.command_line_interface|lower == 'typer' -%}
-typer{% endif %}
-{% if cookiecutter.command_line_interface|lower == 'click' -%}
-click{% endif %}
+click
+typer
 pre-commit
-bump2version
-flake8
-{% if cookiecutter.use_black == 'y' -%}
 black
-isort{% endif %}
-{% if cookiecutter.use_pytest == 'y' -%}
+isort
 pytest
-pytest-runner
 pytest-cookies
-{% endif %}
-coverage
 tox
 furo
 twine
