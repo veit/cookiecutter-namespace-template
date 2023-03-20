@@ -1,6 +1,6 @@
 -c constraints_dev.txt
 
-cruft
+cruft==2.12.0
 click
 typer
 pre-commit
