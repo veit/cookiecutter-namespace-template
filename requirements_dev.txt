@@ -11,4 +11,4 @@ pytest-cookies==0.7.0
 tox==4.4.8
 furo==2023.3.27
 twine==4.0.2
-pep517
+pep517==0.13.0
