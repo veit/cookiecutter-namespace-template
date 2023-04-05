@@ -49,6 +49,7 @@ Pygments==2.14.0
 pyproject_api==1.5.1
 pytest==7.2.2
 pytest-cookies==0.7.0
+pytest-runner==6.0.0
 python-dateutil==2.8.2
 python-slugify==8.0.1
 PyYAML==6.0
