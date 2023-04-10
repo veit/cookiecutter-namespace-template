@@ -14,5 +14,6 @@
   "command_line_interface": ["Typer", "Click", "Argparse", "No command-line interface"],
   "version": "0.1.0",
   "create_author_file": "y",
-  "license": ["MIT license", "BSD license", "ISC license", "Apache Software License 2.0", "GNU General Public License v3", "Other/Proprietary License"]
+  "license": ["MIT license", "BSD license", "ISC license", "Apache Software License 2.0", "GNU General Public License v3", "Other/Proprietary License"],
+  "_copy_without_render": [".github/workflows/pre-commit.yml"]
 }
