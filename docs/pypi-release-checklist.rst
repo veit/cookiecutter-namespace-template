@@ -24,7 +24,7 @@ For Every Release
 
    .. code-block:: bash
 
-      $ python setup.py develop
+      $ python -m pip install -e '.[dev]'
 
 #. Run the tests:
 
@@ -49,13 +49,6 @@ For Every Release
 
    #. Copy and paste the RestructuredText into http://rst.ninjs.org/ to find
       out what broke the formatting.
-
-   #. Check your ``long_description`` locally:
-
-      .. code-block:: bash
-
-         $ pip install readme_renderer
-         $ python setup.py check -r -s
 
 #. Edit the release on GitHub
    (e.g. https://github.com/veit/cookiecutter-namespace-template/releases).

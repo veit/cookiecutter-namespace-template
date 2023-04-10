@@ -73,7 +73,7 @@ local development.
 
     $ mkvirtualenv {{ cookiecutter.project_slug }}
     $ cd {{ cookiecutter.project_slug }}/
-    $ python setup.py develop
+    $ python -m pip install -e '.[dev]'
 
 4. Create a branch for local development::
 

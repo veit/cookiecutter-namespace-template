@@ -63,13 +63,14 @@ Then install cruft:
 
 #. Install dev requirements
 
-    You should still be in the folder containing the ``constraints_dev.txt`` file.
+    You should still be in the folder containing the :file:`pyproject.toml`
+    file.
 
     Install the new project’s local development requirements:
 
     .. code-block:: console
 
-        $ python -m pip install -r constraints_dev.txt
+        $ python -m pip install -e '.[dev]'
 
 #. Release on PyPI
 

@@ -79,7 +79,7 @@ def test_bake_with_defaults(cookies):
         assert result.exception is None
 
         found_toplevel_files = [f.basename for f in result.project.listdir()]
-        assert "setup.py" in found_toplevel_files
+        assert "pyproject.toml" in found_toplevel_files
         assert "vsc" in found_toplevel_files
         assert "tox.ini" in found_toplevel_files
         assert "tests" in found_toplevel_files
@@ -93,7 +93,7 @@ def test_bake_and_run_tests(cookies):
 
 
 def test_bake_withspecialchars_and_run_tests(cookies):
-    """Ensure that a `full_name` with double quotes does not break setup.py"""
+    """Ensure that a `full_name` with double quotes does not break pyproject.toml"""
     with bake_in_temp_dir(
         cookies, extra_context={"full_name": 'name "quote" name'}
     ) as result:
@@ -102,7 +102,7 @@ def test_bake_withspecialchars_and_run_tests(cookies):
 
 
 def test_bake_with_apostrophe_and_run_tests(cookies):
-    """Ensure that a `full_name` with apostrophes does not break setup.py"""
+    """Ensure that a `full_name` with apostrophes does not break pyproject.toml"""
     with bake_in_temp_dir(
         cookies, extra_context={"full_name": "O'connor"}
     ) as result:
@@ -166,7 +166,7 @@ def test_bake_not_open_source(cookies):
         cookies, extra_context={"license": "Other/Proprietary License"}
     ) as result:
         found_toplevel_files = [f.basename for f in result.project.listdir()]
-        assert "setup.py" in found_toplevel_files
+        assert "pyproject.toml" in found_toplevel_files
         assert "LICENSE" not in found_toplevel_files
         assert "License" not in result.project.join("README.rst").read()
 
@@ -202,10 +202,6 @@ def test_bake_with_no_console_script(cookies):
     found_project_files = os.listdir(package_dir)
     assert "cli.py" not in found_project_files
 
-    setup_path = os.path.join(project_path, "setup.py")
-    with open(setup_path, "r") as setup_file:
-        assert "entry_points" not in setup_file.read()
-
 
 def test_bake_with_click_console_script_file(cookies):
     context = {"command_line_interface": "Click"}
@@ -214,10 +210,6 @@ def test_bake_with_click_console_script_file(cookies):
     found_project_files = os.listdir(package_dir)
     assert "cli.py" in found_project_files
 
-    setup_path = os.path.join(project_path, "setup.py")
-    with open(setup_path, "r") as setup_file:
-        assert "entry_points" in setup_file.read()
-
 
 def test_bake_with_argparse_console_script_file(cookies):
     context = {"command_line_interface": "Argparse"}
@@ -225,10 +217,6 @@ def test_bake_with_argparse_console_script_file(cookies):
     project_path, project_slug, project_dir = project_info(result)
     found_project_files = os.listdir(project_dir)
     assert "cli.py" in found_project_files
-
-    setup_path = os.path.join(project_path, "setup.py")
-    with open(setup_path, "r") as setup_file:
-        assert "entry_points" in setup_file.read()
 
 
 def test_bake_with_console_script_cli(cookies):
