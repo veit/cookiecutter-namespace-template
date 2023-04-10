@@ -35,7 +35,7 @@ extras = {
     "ISC license": "License :: OSI Approved :: ISC License (ISCL)",
     "Apache Software License 2.0": "License :: OSI Approved :: Apache Software License",
     "GNU General Public License v3": "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
-    "Other/Proprietary License": "License :: Other/Proprietary License"
+    "Other/Proprietary License": "Private :: Do Not Upload"
 } %}
 
 setup(
