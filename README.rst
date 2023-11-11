@@ -28,7 +28,7 @@ Features
 .. Keep python versions of tox in sync with tox.ini.
 
 * Testing setup with ``unittest`` or ``pytest``
-* `Tox <https://tox.readthedocs.io/>`_ testing: Setup to easily test for Python
+* `Tox <https://tox.wiki/en/latest/>`_ testing: Setup to easily test for Python
   3.7, 3.8, 3.9, 3.10 and 3.11.
 * `Sphinx <http://www.sphinx-doc.org/>`_ docs: Documentation ready for
   generation with, for example, ReadTheDocs_
