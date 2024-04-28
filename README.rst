@@ -29,7 +29,7 @@ Features
 
 * Testing setup with ``unittest`` or ``pytest``
 * `Tox <https://tox.wiki/en/latest/>`_ testing: Setup to easily test for Python
-  3.7, 3.8, 3.9, 3.10 and 3.11.
+  3.8, 3.9, 3.10, 3.11, 3.12 and pypy.
 * `Sphinx <http://www.sphinx-doc.org/>`_ docs: Documentation ready for
   generation with, for example, ReadTheDocs_
 * `bump2version <https://github.com/c4urself/bump2version>`_: Pre-configured
