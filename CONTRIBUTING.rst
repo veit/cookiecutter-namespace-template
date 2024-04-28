@@ -83,7 +83,7 @@ and ready to go.
 
    .. code-block:: bash
 
-    $ python -m pip install -r requirements_dev.txt
+    $ python -m pip install -e ".[dev]"
     $ pre-commit install
     pre-commit installed at .git/hooks/pre-commit
 
@@ -109,7 +109,7 @@ and ready to go.
 
    .. code-block:: bash
 
-    $ python -m pip install -r requirements_dev.txt
+    $ python -m pip install -e ".[tests]"
     $ python -m pytest ./tests
 
    If you get any errors while installing cryptography package (something like
