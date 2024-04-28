@@ -1,4 +1,4 @@
-# Cookiecutter shouldn’t process github variables {% raw %}
+# {% raw %}
 name: pre-commit
 
 on:

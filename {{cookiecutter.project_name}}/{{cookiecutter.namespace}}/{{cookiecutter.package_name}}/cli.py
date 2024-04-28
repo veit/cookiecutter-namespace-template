@@ -16,7 +16,9 @@ app = typer.Typer()
 @app.command()
 def main(args=None):
     """Console script for {{cookiecutter.project_slug}}."""
-    typer.echo("Replace this message by putting your code into {{cookiecutter.project_slug}}.cli.main")
+    typer.echo(
+        "Replace this message by putting your code into {{cookiecutter.project_slug}}.cli.main"
+        )
     typer.echo("See typer documentation at https://typer.tiangolo.com/")
     return 0
 {%- endif %}
