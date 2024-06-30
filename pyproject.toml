@@ -1,13 +1,17 @@
 [build-system]
-requires = ["hatchling"]
+requires = ["hatchling", "hatch-vcs"]
 build-backend = "hatchling.build"
+
+[tool.hatch.version]
+source = "vcs"
+raw-options = { local_scheme = "no-local-version" }
 
 [tool.hatch.build.targets.wheel]
 packages = ["."]
 
 [project]
 name = "cookiecutter-namespace-template"
-version = "0.4.0"
+dynamic = ["version"]
 description = "Cookiecutter template for a Python namespace package"
 readme = "README.rst"
 authors = [{ name = "Veit Schiele", email = "veit@cusy.io" }]
