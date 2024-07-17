@@ -9,8 +9,6 @@ Template for a Python package.
 
 .. |Downloads| image:: https://pepy.tech/badge/cookiecutter-namespace-template
    :target: https://pepy.tech/project/cookiecutter-namespace-template
-.. |Updates| image:: https://pyup.io/repos/github/veit/cookiecutter-namespace-template/shield.svg
-   :target: https://pyup.io/repos/github/veit/cookiecutter-namespace-template/
 .. |Versions| image:: https://img.shields.io/pypi/pyversions/cookiecutter-namespace-template.svg
    :target: https://pypi.org/project/cookiecutter-namespace-template/
 .. |Contributors| image:: https://img.shields.io/github/contributors/veit/cookiecutter-namespace-template.svg
@@ -74,13 +72,6 @@ Quickstart
 
 #. Add the repo to your `ReadTheDocs <https://readthedocs.io/>`_ account and
    turn on the ReadTheDocs service hook.
-
-#. If you want to add the pyup badge to your README file
-
-   #. create a new account at `pyup.io <https://pyup.io>`_ or log into your
-      existing account
-   #. click on the green *Add Repo* button
-   #. click *Pin* to add the repo
 
 #. Release your package by pushing a new tag to main.
 
