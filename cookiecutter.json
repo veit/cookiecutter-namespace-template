@@ -10,7 +10,6 @@
   "pypi_username": "veit",
   "use_pytest": "y",
   "use_black": "y",
-  "add_pyup_badge": "n",
   "command_line_interface": ["Typer", "Click", "Argparse", "No command-line interface"],
   "version": "0.1.0",
   "create_author_file": "y",
