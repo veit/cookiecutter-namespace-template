@@ -4,18 +4,16 @@
 
 {% if cookiecutter.use_pytest == 'y' -%}
 import pytest
-{% else %}
+{%- else %}
 import unittest
-{%- endif %}
+{% endif %}
 {%- if cookiecutter.command_line_interface|lower == 'typer' %}
 from typer.testing import CliRunner
 {%- endif %}
 {%- if cookiecutter.command_line_interface|lower == 'click' %}
 from click.testing import CliRunner
 {%- endif %}
-
-# from {{ cookiecutter.project_slug }} import {{ cookiecutter.project_slug }}
-{%- if cookiecutter.command_line_interface|lower in ('typer', 'click') %}
+{% if cookiecutter.command_line_interface|lower in ('typer', 'click') %}
 from {{ cookiecutter.project_slug }} import cli
 {%- endif %}
 
