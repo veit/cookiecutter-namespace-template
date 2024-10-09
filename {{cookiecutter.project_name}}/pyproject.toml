@@ -40,6 +40,7 @@ classifiers = [
     "Topic :: Software Development :: Libraries :: Python Modules",
 ]
 dependencies = [
+    "setuptools",
     {%- if cookiecutter.command_line_interface|lower == "typer" %}
     "typer[all]",
     {%- endif %}
@@ -72,6 +73,9 @@ dev = [
     "black",
     "isort",
 ]
+
+[tool.hatch.build.targets.wheel]
+packages = ["{{ cookiecutter.namespace }}/{{ cookiecutter.package_name }}"]
 
 [tool.black]
 line-length = 79
