@@ -53,6 +53,8 @@ docs = [
 dev = [
     "cookiecutter-namespace-template[tests, docs]",
     "pre-commit",
+    "codespell",
+    "tomli; python_version < '3.11'"
 ]
 
 [project.urls]
@@ -74,3 +76,6 @@ not_skip="__init__.py"
 use_parentheses=true
 
 known_first_party="cookiecutter-namespace-template"
+
+[tool.codespell]
+ignore-words-list = ["ninjs"]

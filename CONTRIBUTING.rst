@@ -105,7 +105,7 @@ and ready to go.
 
 #. The next step would be to run the test cases.
    ``cookiecutter-namespace-template`` uses ``pytest``. Before you run pytest
-   you should ensure all dependancies are installed:
+   you should ensure all dependencies are installed:
 
    .. code-block:: bash
 
