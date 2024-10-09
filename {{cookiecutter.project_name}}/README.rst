@@ -37,7 +37,7 @@ Features
 Credits
 -------
 
-This package was created with `cruft <https://cruft.github.io/cruft/>`,
+This package was created with `cruft <https://cruft.github.io/cruft/>`_,
 `Cookiecutter <https://github.com/cookiecutter/cookiecutter>`_ and the
 `cookiecutter-namespace-template
 <https://github.com/veit/cookiecutter-namespace-template>`_ project template.
