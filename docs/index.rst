@@ -1,29 +1,35 @@
-Welcome to cookiecutter-namespace-templates’s documentation!
-============================================================
+Cookiecutter Namespace Template
+===============================
 
-Getting Started
----------------
+Preface
+-------
+
+.. _readme:
+
+.. include:: ../README.rst
+   :start-after: preface
 
 .. toctree::
+   :caption: Getting Started
+   :hidden:
    :maxdepth: 2
 
-   readme
    tutorial
    prompts
    pypi-release-checklist
 
-Options
--------
 
 .. toctree::
+   :caption: Options
+   :hidden:
    :maxdepth: 2
 
    console-script-setup
 
 
-Indices and tables
-==================
+.. Indices and tables
+   ==================
 
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
+   * :ref:`genindex`
+   * :ref:`modindex`
+   * :ref:`search`

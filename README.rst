@@ -2,6 +2,8 @@
 Cookiecutter Namespace Template
 ===============================
 
+.. preface
+
 `Cookiecutter <https://github.com/cookiecutter/cookiecutter>`_ Namespace
 Template for a Python package.
 
