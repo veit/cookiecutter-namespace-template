@@ -13,11 +13,11 @@ For Every Release
       $ git add HISTORY.rst
       $ git commit -m "Changelog for upcoming release 0.1.1."
 
-#. Update version number (can also be patch or major)
+#. Update version number (can also be ``patch`` or ``major``)
 
    .. code-block:: bash
 
-      $ bump2version minor
+      $ bump-my-version bump minor
 
 #. Install the package again for local development, but with the new version
    number:

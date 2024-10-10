@@ -32,8 +32,8 @@ Features
   3.9, 3.10, 3.11, 3.12, 3.13, and pypy.
 * `Sphinx <http://www.sphinx-doc.org/>`_ docs: Documentation ready for
   generation with, for example, ReadTheDocs_
-* `bump2version <https://github.com/c4urself/bump2version>`_: Pre-configured
-  version bumping with a single command
+* `Bump My Version <https://github.com/callowayproject/bump-my-version>`_:
+  Pre-configured version bumping with a single command
 * If the `cookiecutter-namespace-template
   <https://github.com/veit/cookiecutter-namespace-template>`_ project template
   has been changed, you can apply these changes with

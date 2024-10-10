@@ -64,10 +64,11 @@ docs = [
 build = [
     "build",
     "twine",
-    "pep517"
+    "pep517",
+    "bump-my-version"
 ]
 dev = [
-    "{{ cookiecutter.project_slug }}[tests, docs]",
+    "{{ cookiecutter.project_slug }}[tests, docs, build]",
     "pre-commit",
     "cruft",
     "black",
