@@ -19,7 +19,7 @@ license = "BSD-3-Clause"
 requires-python = ">=3.9"
 keywords = ["cookiecutter", "template", "package"]
 classifiers = [
-    "Development Status :: 4 - Beta",
+    "Development Status :: 5 - Production/Stable",
     "Environment :: Console",
     "Intended Audience :: Developers",
     "Natural Language :: English",
