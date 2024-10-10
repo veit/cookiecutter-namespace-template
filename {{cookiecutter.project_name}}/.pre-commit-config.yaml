@@ -17,6 +17,7 @@ repos:
     hooks:
     - id: sphinx-lint
       types: [rst]
+{%- if cookiecutter.use_black == 'y' %}
   - repo: https://github.com/pycqa/isort
     rev: 5.13.2
     hooks:
@@ -40,3 +41,4 @@ repos:
     hooks:
     - id: codespell
       files: $(git diff --staged --name-only "*")
+{%- endif %}

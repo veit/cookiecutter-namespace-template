@@ -71,13 +71,17 @@ dev = [
     "{{ cookiecutter.project_slug }}[tests, docs, build]",
     "pre-commit",
     "cruft",
-    "black",
+{%- if cookiecutter.use_black == 'y' %}
     "isort",
+    "black",
+{%- endif %}
 ]
 
 [tool.hatch.build.targets.wheel]
 packages = ["{{ cookiecutter.namespace }}/{{ cookiecutter.package_name }}"]
 
+{%- if cookiecutter.use_black == 'y' %}
 [tool.black]
 line-length = 79
 skip-string-normalization = true
+{%- endif %}
