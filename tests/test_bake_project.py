@@ -80,7 +80,7 @@ def test_bake_with_defaults(cookies):
 
         found_toplevel_files = [f.basename for f in result.project.listdir()]
         assert "pyproject.toml" in found_toplevel_files
-        assert "vsc" in found_toplevel_files
+        assert "cusy" in found_toplevel_files
         assert "tox.ini" in found_toplevel_files
         assert "tests" in found_toplevel_files
 
@@ -157,7 +157,7 @@ def test_bake_selecting_license(cookies):
             assert target_string in result.project.join("LICENSE").read()
             assert (
                 license
-                in result.project.join("vsc", "example", "__init__.py").read()
+                in result.project.join("cusy", "example", "__init__.py").read()
             )
 
 
@@ -176,7 +176,7 @@ def test_using_pytest(cookies):
         cookies, extra_context={"use_pytest": "y"}
     ) as result:
         assert result.project.isdir()
-        test_file_path = result.project.join("tests/test_vsc-example.py")
+        test_file_path = result.project.join("tests/test_cusy-example.py")
         lines = test_file_path.readlines()
         assert "import pytest" in "".join(lines)
         # Test the new pytest target
@@ -188,7 +188,7 @@ def test_using_unittest(cookies):
         cookies, extra_context={"use_pytest": "n"}
     ) as result:
         assert result.project.isdir()
-        test_file_path = result.project.join("tests/test_vsc-example.py")
+        test_file_path = result.project.join("tests/test_cusy-example.py")
         lines = test_file_path.readlines()
         assert "import unittest" in "".join(lines)
         assert "import pytest" not in "".join(lines)

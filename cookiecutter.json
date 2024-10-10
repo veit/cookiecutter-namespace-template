@@ -2,7 +2,7 @@
   "full_name": "Veit Schiele",
   "email": "veit@example.org",
   "github_username": "veit",
-  "project_name": "vsc.example",
+  "project_name": "cusy.example",
   "project_slug": "{{ cookiecutter.project_name.lower().replace(' ', '_').replace('-', '_') }}",
   "namespace": "{{ cookiecutter.project_slug.split('.')[0] }}",
   "package_name": "{{ cookiecutter.project_slug.split('.')[1] }}",
