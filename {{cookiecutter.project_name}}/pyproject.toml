@@ -78,7 +78,7 @@ dev = [
 ]
 
 [tool.hatch.build.targets.wheel]
-packages = ["{{ cookiecutter.namespace }}/{{ cookiecutter.package_name }}"]
+packages = ["src/{{ cookiecutter.namespace }}"]
 
 {%- if cookiecutter.use_black == 'y' %}
 [tool.black]
