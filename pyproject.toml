@@ -40,7 +40,7 @@ dependencies = [
     "cookiecutter"
 ]
 
-[project.optional-dependencies]
+[dependency-groups]
 tests = [
     "pytest",
     "pytest-cookies",
@@ -51,7 +51,8 @@ docs = [
     "furo",
 ]
 dev = [
-    "cookiecutter-namespace-template[tests, docs]",
+    {include-group = "tests"},
+    {include-group = "docs"},
     "pre-commit",
     "codespell",
     "tomli; python_version < '3.11'"

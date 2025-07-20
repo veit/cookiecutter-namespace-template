@@ -18,7 +18,7 @@ This is the preferred method to install {{ cookiecutter.project_name }}, as it
 will always install the most recent stable release.
 
 To create the documentation, you can install {{ cookiecutter.project_slug }}
-with the extra ``docs``:
+with the dependency group ``docs``:
 
 .. code-block:: console
 
@@ -26,7 +26,7 @@ with the extra ``docs``:
 
 {% if cookiecutter.use_pytest == 'y' -%}
 To run the tests with pytest, you can install  {{ cookiecutter.project_slug }}
-with the extra ``tests``:
+with the dependency group ``tests``:
 
 .. code-block:: console
 

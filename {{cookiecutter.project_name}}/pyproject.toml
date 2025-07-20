@@ -49,7 +49,7 @@ dependencies = [
     {%- endif %}
 ]
 
-[project.optional-dependencies]
+[dependency-groups]
 tests = [
     {% if cookiecutter.use_pytest == "y" -%}
     "pytest",
@@ -68,7 +68,9 @@ build = [
     "bump-my-version"
 ]
 dev = [
-    "{{ cookiecutter.project_slug }}[tests, docs, build]",
+    {include-group = "tests"},
+    {include-group = "docs"},
+    {include-group = "build"},
     "pre-commit",
     "cruft",
 {%- if cookiecutter.use_black == 'y' %}
