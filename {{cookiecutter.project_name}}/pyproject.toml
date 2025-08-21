@@ -2,21 +2,14 @@
 requires = ["hatchling"]
 build-backend = "hatchling.build"
 
-{%- set license_classifiers = {
-    "MIT": "License :: OSI Approved :: MIT License",
-    "BSD-2-Clause": "License :: OSI Approved :: BSD License",
-    "BSD-3-Clause": "License :: OSI Approved :: BSD License",
-    "Apache-2.0": "License :: OSI Approved :: Apache Software License",
-    "GPL-3.0-only": "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
-    "GPL-3.0-or-later": "License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)",
-    "Other/Proprietary License": "Private :: Do Not Upload"
-} %}
-
 [project]
 name = "{{ cookiecutter.project_slug }}"
 version = "{{ cookiecutter.version }}"
 authors = [{ name = "{{ cookiecutter.full_name.replace('\"', '\\\"') }}", email = "{{ cookiecutter.email }}" }]
-license = "{{ cookiecutter.license }}"
+{% if cookiecutter.license != "Other/Proprietary License" %}
+License-Expression = "{{ cookiecutter.license }}"
+License-File = [ "LICENSE" ]
+{% endif %}
 requires-python = ">=3.9"
 description = "{{ cookiecutter.project_short_description }}"
 keywords = ["{{ cookiecutter.project_slug }}"]
@@ -24,9 +17,9 @@ classifiers = [
     "Development Status :: 2 - Pre-Alpha",
     "Intended Audience :: Developers",
     "Natural Language :: English",
-{%- if cookiecutter.license in license_classifiers %}
-    "{{ license_classifiers[cookiecutter.license] }}",
-{%- endif %}
+{% if cookiecutter.license == "Other/Proprietary License" %}
+    "Private :: Do Not Upload",
+{% endif %}
     "Operating System :: OS Independent",
     "Programming Language :: Python",
     "Programming Language :: Python :: 3",

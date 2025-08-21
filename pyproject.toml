@@ -14,8 +14,9 @@ name = "cookiecutter-namespace-template"
 dynamic = ["version"]
 description = "Cookiecutter template for a Python namespace package"
 readme = "README.rst"
+License-Expression = "BSD-3-Clause"
+License-File = [ "LICENSE" ]
 authors = [{ name = "Veit Schiele", email = "veit@cusy.io" }]
-license = "BSD-3-Clause"
 requires-python = ">=3.9"
 keywords = ["cookiecutter", "template", "package"]
 classifiers = [
@@ -23,7 +24,6 @@ classifiers = [
     "Environment :: Console",
     "Intended Audience :: Developers",
     "Natural Language :: English",
-    "License :: OSI Approved :: BSD License",
     "Operating System :: OS Independent",
     "Programming Language :: Python",
     "Programming Language :: Python :: 3",
