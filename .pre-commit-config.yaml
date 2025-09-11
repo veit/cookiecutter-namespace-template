@@ -13,23 +13,19 @@ repos:
     - id: check-yaml
       exclude:  ^{{cookiecutter.project_name}}/
     - id: check-added-large-files
+  - repo: https://github.com/astral-sh/ruff-pre-commit
+    rev: v0.12.10
+    hooks:
+    - id: ruff-check
+      args: [--fix, --exit-non-zero-on-fix]
+      exclude: "^docs|^[{]{2}cookiecutter.project_name[}]{2}/"
+    - id: ruff-format
+      exclude: "^docs|^[{]{2}cookiecutter.project_name[}]{2}/"
   - repo: https://github.com/sphinx-contrib/sphinx-lint
     rev: v1.0.0
     hooks:
     - id: sphinx-lint
       types: [rst]
-  - repo: https://github.com/pycqa/isort
-    rev: 6.0.1
-    hooks:
-    - id: isort
-      additional_dependencies: ["toml"]
-      entry: isort --profile=black
-      name: isort (python)
-  - repo: https://github.com/psf/black
-    rev: 25.1.0
-    hooks:
-    - id: black
-      exclude: ^\{\{cookiecutter.project_name\}\}/
   - repo: https://github.com/adamchainz/blacken-docs
     rev: "1.19.1"
     hooks:

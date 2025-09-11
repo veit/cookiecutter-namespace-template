@@ -66,17 +66,27 @@ dev = [
     {include-group = "build"},
     "pre-commit",
     "cruft",
-{%- if cookiecutter.use_black == 'y' %}
-    "isort",
-    "black",
-{%- endif %}
 ]
+
+{% if cookiecutter.use_ruff == 'y' %}
+[tool.ruff]
+src = ["src", "tests"]
+line-length = 79
+
+[tool.ruff.lint]
+select = ["ALL"]
+ignore = [
+    "ANN",     # We don’t use type annotations
+    "D203",    # It’s incompatible to D211
+    "D213",    # It’s incompatible to D212
+]
+
+[tool.ruff.lint.per-file-ignores]
+"tests/*" = [
+    "ERA001",  # Commented-out code in test examples is fine
+    "S101",    # assert in tests is fine
+]
+{%- endif %}
 
 [tool.hatch.build.targets.wheel]
 packages = ["src/{{ cookiecutter.namespace }}"]
-
-{%- if cookiecutter.use_black == 'y' %}
-[tool.black]
-line-length = 79
-skip-string-normalization = true
-{%- endif %}

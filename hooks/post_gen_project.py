@@ -1,20 +1,23 @@
-#!/usr/bin/env python
-import os
+"""Hooks after creating the project."""
 
+import os
+from pathlib import Path
 
 project_path = os.path.realpath(os.path.curdir)
 project_slug = os.path.split(project_path)[1]
 namespace = project_slug.split(".")[0]
 package_name = project_slug.split(".")[1]
-package_path = os.path.join(project_path, namespace, package_name)
+package_path = Path(project_path, namespace, package_name)
 
 
 def remove_project_file(filepath):
-    os.remove(os.path.join(project_path, filepath))
+    """Remove a project file, for example, the AUTHORS file."""
+    Path(project_path, filepath).unlink()
 
 
 def remove_package_file(filepath):
-    os.remove(os.path.join(package_path, filepath))
+    """Remove a package file, for example, the cli module."""
+    Path(package_path, filepath).unlink()
 
 
 if __name__ == "__main__":
@@ -23,11 +26,11 @@ if __name__ == "__main__":
         remove_project_file("docs/authors.rst")
 
     if "{{ cookiecutter.use_pytest }}" == "y":
-        init_file = os.path.join(project_path, "tests", "__init__.py")
+        init_file = Path(project_path, "tests", "__init__.py")
         remove_project_file(init_file)
 
     if "no" in "{{ cookiecutter.command_line_interface|lower }}":
-        cli_file = os.path.join(package_path, "cli.py")
+        cli_file = Path(package_path, "cli.py")
         remove_package_file(cli_file)
 
     if "Other/Proprietary License" == "{{ cookiecutter.license }}":

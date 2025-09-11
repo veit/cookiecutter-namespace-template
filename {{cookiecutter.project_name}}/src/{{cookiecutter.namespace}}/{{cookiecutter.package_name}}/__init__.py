@@ -12,11 +12,11 @@ __email__ = "{{ cookiecutter.email }}"
 __license__ = "{{ cookiecutter.license }}"
 
 __all__ = [
-    "__title__",
-    "__summary__",
-    "__url__",
-    "__version__",
     "__author__",
     "__email__",
     "__license__",
+    "__summary__",
+    "__title__",
+    "__url__",
+    "__version__",
 ]
