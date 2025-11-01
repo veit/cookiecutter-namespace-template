@@ -1,9 +1,10 @@
 name: CI
 
 on:
-  pull_request:
   push:
     branches: [main]
+    tags: ["*"]
+  pull_request:
 
 env:
   FORCE_COLOR: "1"
@@ -14,8 +15,8 @@ jobs:
   pre-commit:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v4
-    - uses: actions/setup-python@v5
+    - uses: actions/checkout@v5
+    - uses: actions/setup-python@v6
     - uses: actions/cache@v4
       with:
         path: ~/.cache/pre-commit
@@ -35,9 +36,10 @@ jobs:
           - "3.12"
           - "3.13"
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout project
+        uses: actions/checkout@v5
       - name: Setup Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v6
         with:
           python-version: ${{ matrix.python }}
       - name: Install tox
