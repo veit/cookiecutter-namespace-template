@@ -10,7 +10,7 @@ authors = [{ name = "{{ cookiecutter.full_name.replace('\"', '\\\"') }}", email 
 License-Expression = "{{ cookiecutter.license }}"
 License-File = [ "LICENSE" ]
 {% endif %}
-requires-python = ">=3.9"
+requires-python = ">=3.10"
 description = "{{ cookiecutter.project_short_description }}"
 keywords = ["{{ cookiecutter.project_slug }}"]
 classifiers = [
@@ -23,11 +23,11 @@ classifiers = [
     "Operating System :: OS Independent",
     "Programming Language :: Python",
     "Programming Language :: Python :: 3",
-    "Programming Language :: Python :: 3.9",
     "Programming Language :: Python :: 3.10",
     "Programming Language :: Python :: 3.11",
     "Programming Language :: Python :: 3.12",
     "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: 3.14",
     "Programming Language :: Python :: Implementation :: CPython",
     "Programming Language :: Python :: Implementation :: PyPy",
     "Topic :: Software Development :: Libraries :: Python Modules",
