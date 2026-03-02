@@ -42,9 +42,10 @@ dependencies = [
 
 [dependency-groups]
 tests = [
-    "pytest",
+    "pytest>=9",
     "pytest-cookies",
-    "tox",
+    "pytest-cov",
+    "tox-uv>=1.16",
 ]
 docs = [
     "sphinx",
@@ -62,6 +63,17 @@ dev = [
 Documentation = "https://cookiecutter-namespace-template.readthedocs.io/"
 "Bug Tracker" = "https://github.com/veit/cookiecutter-namespace-template/issues"
 "Source Code" = "https://github.com/veit/cookiecutter-namespace-template"
+
+[tool.pytest]
+minversion = "9.0"
+addopts = [
+  "--strict-markers",
+  "--strict-config",
+  "-ra",
+]
+testpaths = [
+  "tests",
+]
 
 [tool.ruff]
 src = ["tests"]
@@ -86,3 +98,82 @@ ignore = [
 
 [tool.codespell]
 ignore-words-list = ["ninjs"]
+
+[tool.coverage]
+paths.source = [ "src", ".tox/py*/**/site-packages" ]
+report.show_missing = true
+report.skip_covered = true
+report.exclude_lines = [
+  "no cov",
+  "if __name__ == .__main__.:",
+]
+
+[tool.tox]
+requires = [ "tox>=4" ]
+env_list = [
+  "pre-commit",
+  "docs",
+  "py3{10-14}",
+  "py{13-14}t",
+  "pypy",
+  "coverage-report",
+]
+isolated_build_env = "True"
+skip_missing_interpreters = true
+env.pre-commit.description = "Run all pre-commit hooks."
+env.pre-commit.deps = [
+  "pre-commit",
+]
+env.pre-commit.skip_install = true
+env.pre-commit.commands = [
+  [ "pre-commit", "run", "--all-files" ],
+]
+# Keep base_python in sync with ci.yml and .readthedocs.yaml.
+env.docs.base_python = [ "py313" ]
+env.docs.deps = [ "interrogate" ]
+env.docs.dependency_groups = [ "docs" ]
+env.docs.commands = [
+  [
+    "sphinx-build",
+    "-n",
+    "-T",
+    "-W",
+    "-b",
+    "html",
+    "-d",
+    "{envtmpdir}/doctrees",
+    "docs",
+    "docs/_build/html"
+  ],
+  [
+    "sphinx-build",
+    "-n",
+    "-T",
+    "-W",
+    "-b",
+    "doctest",
+    "-d",
+    "{envtmpdir}/doctrees",
+    "docs",
+    "docs/_build/html"
+  ],
+]
+env.docs-linkcheck.base_python = [ "{[tool.tox.env.docs]base_python}" ]
+env.docs-linkcheck.dependency_groups = [ "docs" ]
+env.docs-linkcheck.commands = [
+  [ "sphinx-build", "-W", "-b", "linkcheck", "-d", "{envtmpdir}/doctrees", "docs", "docs/_build/html" ]
+]
+env.coverage-report.description = "Report coverage over all test runs."
+env.coverage-report.deps = [ "coverage[toml]" ]
+env.coverage-report.depends = [ "py" ]
+env.coverage-report.skip_install = true
+env.coverage-report.commands = [
+  [ "coverage", "combine" ],
+  [ "coverage", "report" ],
+]
+env_run_base.dependency_groups = [ "tests" ]
+env_run_base.deps = [ "coverage[toml]" ]
+env_run_base.commands = [
+  [ "python", "--version", "--version" ],
+  [ "coverage", "run", "-m", "pytest", "{posargs}" ],
+]
